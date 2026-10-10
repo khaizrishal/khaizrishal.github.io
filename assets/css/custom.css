@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+b,
+strong,
+.bold-title {
+    font-family: 'Abril Fatface', serif;
+    font-weight: 400;
+}
