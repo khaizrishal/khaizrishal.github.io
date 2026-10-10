@@ -22,38 +22,94 @@ AI can be helpful, surprising and sometimes very dangerous to use. You do not ne
   - generating language
   - making predictions
   - decisions based on reasoning
+
+## The stages of an AI model: from learning to answering
+An AI assistant is not created in one step. A useful way to picture its life is: prepare examples, train a model to find patterns, tune how it responds, then run it each time someone asks a question.
+### Gather and prepare data
+- Manually collect data suited to the task, such as text or labelled pictures for an image classification. 
+- The materials are cleaned up and organised so it can be processed by computers.
+- The quality of data shapes what and how model learns.
+### Train the model
+- During **training**, computers adjust a model’s internal numbers or weights as its called so it gets better at a task.
+- This takes specialised chips working together in data centres. 
+- **A striking estimate:** researchers estimate that one training run for OpenAI’s GPT-3 used about **1,287 megawatt-hours (MWh)** of electricity enough to power **119 US homes for an entire year** (remember we are at GPT-6 now).
+- Refernce 
+  - [Research estimate for GPT-3](https://arxiv.org/abs/2104.10350) 
+  - [US household electricity figures](https://www.eia.gov/tools/faqs/faq.php?id=97&t=4)
+### Fine Tune its behaviour
+- A trained model may then be **fine-tuned** with more focused tasks such as question-and-answering. 
+- Responses more useful and safer with techniques like Human Feedbacks.
+- This stage shapes how the model responds. It does not guarantee that every answer is correct, fair or safe.
+### Run it: inference
+- **Inference** is the name for using this model. 
+- When you ask it a question aka - prompt, the model processes it and generates an answer. if you see the output of chatgpt carefully you can see the tokens being generated.
+- Each request uses computing resources and electricity. 
+
+## Tokens
 - Broadly speaking, AI falls into two main categories:
-  - **Generative AI**: systems that create new content such as text, images, music or code from a prompt. Think of chatbots, image tools and writing assistants.
-  - **Predictive AI**: systems that analyse patterns in data to estimate what is likely to happen next. Think of spam filters, recommendation systems and forecasting tools.
-- Yes — when most people talk about AI in everyday life, they are usually referring to **Generative AI**: systems like ChatGPT, Claude or Gemini that can produce words, pictures, sound or computer code from a prompt. 
-- Now is it neceassary to know this? Probably not if you dont already know about it.
-- To understand how AI works in our case - think of it like your mobile-phone keyboard autocomplete. 
-  - By the time you have typed-in part of your sentence it would recommend a bunch of next possible words, or 
-  - if you are half way with a word - a recommendation to complete it. 
-- It builds one small piece at a time until you complete it.
-- if I ask a layman how this works - he or she would describe it this way - the phone would **recommend** the next set of **probable** **words or alphabets** **best suited** to **complete the sentence**.
-- These pieces are called **tokens**. Many AI providers charge by how many tokens a prompt and reply use. You can approximate it as 4 token for every 3 english words. E.g. 1,000-word message might use roughly 1,300 to 1,500 tokens. Some plans include a monthly token allowance, while others charge extra once you pass the limit. 
+  - **Generative AI**: Generats new content such as text, images, music or code from a prompt. e.g. Chatbots, Image generation.
+  - **Predictive AI**: Analyses patterns in data to estimate what is likely to happen next. Spam filters, Recommendation systems and House price Forecasting.
+- What most of us call AI in everyday life refers to **Generative AI**: systems like ChatGPT, Claude or Gemini that can produce words, pictures, sound or computer code from a prompt. 
+- Only thing necessary to know is that AI is more than just the chatbots we use on a day to day basis.
+- To understand how this kind of AI works
+  - In its simplest form - Think of it like your mobile-phone keyboard autocomplete. It would **recommend** the next set of most **probable** set of **alphabets or words** most **suited** to **complete the sentence** - one small piece of a word at a time.
+- These pieces are called **tokens**. 
+- Many AI providers charge you by how many tokens a prompt and reply use. You can approximate it as 4 token for every 3 english words. E.g. 1,000-word message might use roughly 1,300 to 1,500 tokens. Some plans include a monthly token allowance, while others charge extra once you pass the limit. 
 - The point is simple: long prompts, long answers and many generations can use up a monthly allocation quickly.
+- https://platform.openai.com/tokenizer
+- 
+<img src="/img/tokenizer.png" alt="How a chatbot breaks text into tokens" width="700">
+
+## The stages of an AI model: from learning to answering
+
+An AI assistant is not created in one step. A useful way to picture its life is: prepare examples, train a model to find patterns, tune how it responds, then run it each time someone asks a question.
+
+### 1. Gather and prepare data
+- Developers collect or create examples suited to the task, such as text for a language model or labelled pictures for an image classifier. They filter and organise this material so it can be processed by computers.
+- The data shapes what a model can learn. It may contain gaps, old information, mistakes or unfair patterns, so more data does not automatically mean better answers.
+
+### 2. Train the model
+- During **training**, computers adjust a model’s internal numbers so it gets better at a task. A language model, for example, practises predicting missing or next pieces of text across a very large number of examples.
+- This takes specialised chips working together in data centres. The electricity depends on the model, the chips, how long they run and how efficiently the data centre operates.
+- **A striking estimate:** researchers estimated that one training run for OpenAI’s GPT-3 used about **1,287 megawatt-hours (MWh)** of electricity. The US Energy Information Administration says the average US residential customer bought 10,791 kilowatt-hours a year in 2022. Dividing those figures gives about **119 homes’ annual electricity** for that GPT-3 training run. This is an estimate for one model and one training run, not a universal number for every AI system. [Research estimate for GPT-3](https://arxiv.org/abs/2104.10350) · [US household electricity figures](https://www.eia.gov/tools/faqs/faq.php?id=97&t=4)
+
+### 3. Tune its behaviour
+- A trained model may then be **fine-tuned** with more focused examples, such as question-and-answer pairs. For an assistant, developers can also use human feedback and other techniques to make responses more useful and safer.
+- This stage shapes how the model responds. It does not guarantee that every answer is correct, fair or safe.
+
+### 4. Test before release
+- Developers evaluate the model with tasks and safety checks. They look for things such as accuracy, harmful responses, privacy risks and how it behaves when a question is unclear.
+- No test can cover every possible question. Testing can find problems and reduce risks, but it cannot prove a model will never make a mistake.
+
+### 5. Run it: inference
+- **Inference** is the name for using a trained model. When you send a prompt, the model processes it and generates an answer. For a chatbot, it predicts a response in small pieces called tokens.
+- Each request uses computing resources and electricity. A model used millions of times keeps drawing power after its original training is finished, so the energy for everyday use adds up across all those requests.
+- The electricity for one answer varies with the model, the length of the prompt and reply, the hardware and the data centre. There is no single reliable figure that applies to every chatbot question.
+
+### 6. Monitor and improve
+- After release, providers monitor performance, fix problems and may update the software, its instructions or the model itself. A major new model can require another training process.
+- A lot of models use the information we give and our usage pattern to further train the model.
 
 
-## Do I have to pay to use AI?
- - What you call as AI and it's application an extension of this ability that lets it do anything from:
-  - Answer questions in ChatGPT, draft emails, translate language and assist with complex tasks.
-  - It can take decision based and make machinery respond based on sensor information.
-  - Even take complex areas like medicines and weaponary very comparable to what a human can do sometimes even better and faster.
-- if you see carefully the AI Chatbots (in whats called a streaming mode) you can see it generating a part of a word at a time, its called a token. For simplicity of calculation for 1 token is about 75% of an word in English.
-- Its like a music mixing console where you have faders, knobs, swtiches buttons similarly you have parameters here to name a few - parameters increase temperature AI become extrememly imaginative put the temperature to 0 it produces a better more consistent output - based on this you can use AI for creative writing or for drafting a legal document.
-- Similarly you can do a role play with it - this is another way to influence how the AI responds to you.
-- Finally in the world before Chatgpt we used to have software code to do lots of things like making calls, converting audio to text etc... you may give AI access to these capabilities - as tools AI will be able to use it based on situation.
-- If you ask me whats missing in AI is the concisousness. personally i see emotions, principles, culture etc associated with words, sentences and semantics, information which is missing in the training data. This is another dimension to the language which AI isn't aware of. e.g you could use abusive language on AI and it would always respond is a composed way - while this is the best way to respond, human often has various degrees of patience, culture and other things drive how a person responds to such situations.
-- this is good and bad because as human there is an element of humanity which we can't be 100% sure if it is built into the AI model or not.
 
 ### Can I trust what AI tells me?
-- A simple picture in your mind
-  - Imagine a keen apprentice who has learnt from millions of books, code, social media feeds, news and listened to many conversations.
+
+- **Where its knowledge comes from.** An AI assistant is trained on an enormous collection of text and code gathered from the open internet, books, news articles, social media and public code repositories. It is not fed one trusted encyclopedia, so its sources are a mix of accurate, outdated and simply wrong material, and nobody checks every sentence before training.
+- **A simple picture in your mind.** Imagine a keen apprentice who has learnt from millions of books, code, social media feeds, news and conversations.
   - Ask for a first draft of a speech: excellent task.
   - Ask whether your chest pain is dangerous: wrong task. The apprentice cannot examine you, take responsibility or call an ambulance.
   - Ask for the opening hours of a local shop: it may know, but the shop’s own website or a phone call is the better source.
+- **Hallucination: confident and wrong.** Because the AI predicts the most likely next words rather than looking up a fact, it can produce an answer that reads perfectly but is untrue. This is called a **hallucination**. It can invent names, dates, quotes, statistics, laws, references and even whole web pages, and it presents them with total confidence.
+- **An example with real consequences.** In 2023 a New York lawyer asked ChatGPT to find earlier cases that supported his argument. It produced six cases that did not exist, complete with convincing names, judges and quotes. The lawyer filed them in court without checking, and the judge later fined the lawyers and their firm $5,000 for relying on fake citations.
+- **A small error, an enormous cost.** In February 2023 Google showed off its chatbot Bard with an advert that claimed the James Webb Space Telescope had taken the first picture of a planet outside our solar system. That was wrong: the first such image came in 2004 from the European Southern Observatory’s Very Large Telescope. Astronomers spotted the mistake within hours, and Alphabet’s share price fell sharply that day, at one point wiping about US$100 billion from the company’s value.
+- **How to check before you trust.** Treat every answer as a first draft, not a fact.
+  - Ask: “What are your sources? Give direct links, not just names.” Then open each link and confirm it exists and supports the claim.
+  - Search the key claim in your own words and compare at least two reliable sources.
+  - Prefer the original source: a government department, hospital, bank, manufacturer or recognised professional body.
+  - Check the date. Rules, prices, opening hours and public figures can change.
+  - Redo any arithmetic with a calculator.
+  - If the answer affects your health, money, safety or rights, confirm it with a real person before you act.
+
 
 ## 2. How a chatbot makes an answer
 
@@ -71,6 +127,19 @@ AI can be helpful, surprising and sometimes very dangerous to use. You do not ne
 - The United States National Institute of Standards and Technology notes that generative systems can confidently generate false material and even false citations. [NIST’s Generative AI Profile](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388) explains why this is a known risk.
 - Do not argue with it as though it is hiding the truth. Ask for sources, then check the sources yourself.
 
+
+
+## Do I have to pay to use AI?
+ - What you call as AI and it's application an extension of this ability that lets it do anything from:
+  - Answer questions in ChatGPT, draft emails, translate language and assist with complex tasks.
+  - It can take decision based and make machinery respond based on sensor information.
+  - Even take complex areas like medicines and weaponary very comparable to what a human can do sometimes even better and faster.
+- if you see carefully the AI Chatbots (in whats called a streaming mode) you can see it generating a part of a word at a time, its called a token. For simplicity of calculation for 1 token is about 75% of an word in English.
+- Its like a music mixing console where you have faders, knobs, swtiches buttons similarly you have parameters here to name a few - parameters increase temperature AI become extrememly imaginative put the temperature to 0 it produces a better more consistent output - based on this you can use AI for creative writing or for drafting a legal document.
+- Similarly you can do a role play with it - this is another way to influence how the AI responds to you.
+- Finally in the world before Chatgpt we used to have software code to do lots of things like making calls, converting audio to text etc... you may give AI access to these capabilities - as tools AI will be able to use it based on situation.
+- If you ask me whats missing in AI is the concisousness. personally i see emotions, principles, culture etc associated with words, sentences and semantics, information which is missing in the training data. This is another dimension to the language which AI isn't aware of. e.g you could use abusive language on AI and it would always respond is a composed way - while this is the best way to respond, human often has various degrees of patience, culture and other things drive how a person responds to such situations.
+- this is good and bad because as human there is an element of humanity which we can't be 100% sure if it is built into the AI model or not.
 ## 3. The traffic-light rule: where AI fits
 
 ### Green light: useful, low-stakes jobs
@@ -282,42 +351,162 @@ AI can be helpful, surprising and sometimes very dangerous to use. You do not ne
 - If the answer is “no” or “I am not sure”, pause and get human help.
 
 
-**Popular AI subscriptions compared, including free plans (prices in US dollars per month, checked October 2026)**
+## **Popular AI subscriptions compared, including free plans (prices in US dollars per month, checked October 2026)**
 
-| Provider | Plan | Price (USD/month) | Models you can use | Usage allowance | Common use cases | Link |
-|---|---|---|---|---|---|---|
-| Anthropic (Claude) | Free | $0 | Sonnet, Haiku | Everyday limits that reset every 5 hours. No Claude Code or Research mode | Trying Claude out, everyday questions, drafting and summarising, simple documents and slides | [claude.com/pricing](https://claude.com/pricing) |
-| Anthropic (Claude) | Pro | $20 ($17/month if you pay $200 up front for the year) | Opus, Sonnet, Haiku. Fable only through pay-as-you-go usage credits | At least 5x Free per rolling 5-hour session, plus weekly limits. Context window up to 1M tokens, depending on the model | Daily writing and editing, research, analysing long documents, coding help, building documents and slides | [claude.com/pricing](https://claude.com/pricing) |
-| Anthropic (Claude) | Max 5x | $100 | Everything in Pro, with Fable included (up to 50% of your weekly limit) | 5x Pro per 5-hour session. Includes $100/month of API credits | Heavy daily use, long coding sessions, people who keep hitting Pro limits | [claude.com/pricing](https://claude.com/pricing) |
-| Anthropic (Claude) | Max 20x | $200 | Same as Max 5x | 20x Pro per 5-hour session. Includes $200/month of API credits | Using Claude as an all-day work tool, very large projects | [claude.com/pricing](https://claude.com/pricing) |
-| OpenAI (ChatGPT) | Free | $0 | GPT-6 Luna | Unlimited text chats (subject to fair-use rules). Limited uploads, images, voice, deep research and memory. May show ads | Casual questions, brainstorming, simple writing help, the odd image | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
-| OpenAI (ChatGPT) | Go | $8 | GPT-6 Luna | More messages, uploads, images and voice than Free. May show ads | Light daily use where Free feels too limited | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
-| OpenAI (ChatGPT) | Plus | $20 | GPT-6.1 Sol, GPT-6 Astra, GPT-6 Sol, GPT-6 Luna | Expanded messages, uploads, deep research and Codex. Reasoning context window 256K tokens | Daily work and study, writing, research, image creation, scheduled tasks, light coding | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
-| OpenAI (ChatGPT) | Pro 100 | $100 | Same models as Plus, with Pro-level reasoning (GPT-6 Astra) | Reported at about 5x Plus. Reasoning context window 400K tokens | Heavy research and coding, people who hit Plus limits most days | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
-| OpenAI (ChatGPT) | Pro 200 | $200 | Same as Pro 100 | More usage than Pro 100. New subscribers get a lower allowance than before | All-day research, coding agents and deep research | [help.openai.com](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers) |
-| OpenAI (ChatGPT) | Pro 500 | $500 | Same as Pro 100, plus "Ultrafast" mode | Highest usage of the three Pro plans. Only plan with Ultrafast | Professionals who need the most capacity and the fastest responses | [help.openai.com](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers) |
-| Google (Gemini) | Free | $0 | Gemini 3.5 Flash-Lite | Everyday limits. Includes image generation, Deep Research, Gemini Live voice chat, Canvas and 15 GB storage | Quick answers, voice chat, summarising and brainstorming for anyone with a Google account | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
-| Google (Gemini) | AI Plus | $4.99 | Gemini 3.6 Flash, Gemini 3.1 Pro | 2x Free usage, 400 GB storage | A low-cost step up, with video generation and Gemini inside Gmail | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
-| Google (Gemini) | AI Pro | $19.99 | Gemini 3.8 Flash, Gemini 3.1 Pro | 4x Free usage. 1M-token context window, 5 TB storage | Gmail, Docs and Drive users, long documents, research, creative video and images | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
-| Google (Gemini) | AI Ultra (lower tier) | $99.99 | Same as AI Pro, plus early access to Deep Think | 5x AI Pro usage, 20 TB storage | Heavy creative work, advanced reasoning, AI agents | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
-| Google (Gemini) | AI Ultra (top tier) | $199.99 | Same as the lower Ultra tier | 20x AI Pro usage | Power users and creators who run out of capacity on every other plan | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
-| Microsoft (Copilot) | Free | $0 | Copilot (Microsoft does not list model names) | Usage limits apply. Works in the browser and Windows, but not built into Word, Excel or PowerPoint | Quick questions while browsing or using Windows, simple image and text requests | [copilot.microsoft.com](https://copilot.microsoft.com/) |
-| Microsoft (Copilot) | Microsoft 365 Personal | $9.99 | Copilot | Standard Copilot usage. Voice mode up to 30 minutes a day | People who already use Word, Excel and Outlook and want some AI help inside them | [microsoft.com](https://www.microsoft.com/en-au/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf) |
-| Microsoft (Copilot) | Microsoft 365 Premium | $19.99 ($199.99 per year) | Copilot inside Word, Excel, PowerPoint and Outlook | Highest Copilot usage of the consumer plans. Voice mode up to 60 minutes a day | Heavy Office users, home-business paperwork and spreadsheets, families who share a plan | [microsoft.com](https://www.microsoft.com/en-au/microsoft-365/p/microsoft-365-premium/cfq7ttc11z3q) |
-| Perplexity | Free | $0 | Basic search models | A small number of advanced "Pro" searches a day. No model choice or Deep Research | Quick, source-linked answers instead of a regular web search | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
-| Perplexity | Pro | $20 ($200 per year) | A choice of models from several AI companies | Higher research limits and file uploads. Weekly allowance for its "Computer" agent | Research with citations, fact-checking, comparing products, reading several documents at once | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
-| Perplexity | Max | $200 ($2,000 per year) | Pro models plus the newest frontier models | 10,000 "Computer" agent credits a month and the highest limits | Professional researchers and people who run many agent tasks | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
-| xAI (Grok) | Free | $0 | Grok (the model varies) | Limited access on grok.com and inside X | Casual chat, questions about what is happening on X | [grok.com/plans](https://grok.com/plans) |
-| xAI (Grok) | SuperGrok Lite | $10 | Grok 4 family | Entry-level limits | Regular chat and image generation on a budget | [grok.com/plans](https://grok.com/plans) |
-| xAI (Grok) | SuperGrok | $30 | Newest Grok models (Grok 4.3 rolling out) | Reported at roughly 100 prompts every 2 hours | Daily chat, live information from X, images and voice | [grok.com/plans](https://grok.com/plans) |
-| xAI (Grok) | SuperGrok Heavy | $300 | Everything in SuperGrok, plus Grok 4 Heavy (multiple AI agents working together) | Highest limits. Sometimes discounted for the first three months | The hardest reasoning and research problems | [grok.com/plans](https://grok.com/plans) |
+The same assistant is rarely the best at everything, so it helps to start from the job you want done. In each table below the free options come first, followed by the paid ones from cheapest to most expensive. Prices are US dollars per month, checked October 2026.
 
-- **Start free:** every provider above has a free plan, and for most people it is enough to find out which assistant you like. Pay only when you keep hitting the limits.
-- **No token counts:** none of these consumer plans publishes a fixed number of tokens. Instead they give you a *usage allowance* that resets every few hours (and sometimes weekly). Long chats, uploaded files and "thinking" modes use that allowance faster. The multiples ("5x Pro", "20x Pro") are the fairest way to compare plans from the same provider.
-- **Context window vs. allowance:** the context window (for example 1M tokens) is how much the AI can read in a single conversation. It is not the same as how much you can use per month.
-- **Pay per token instead:** if you want an exact token count, the companies' developer services (the "API") charge per million tokens. That is a separate product from these subscriptions.
-- **Australian prices differ:** the table uses US dollar prices from each company's US page, before tax. Google's Australian page, for example, lists AI Plus at A$7.99, AI Pro at A$32.99 and AI Ultra from A$149.99. Check the link for your own country, and note that app-store purchases can cost more.
-- **Prices change often:** plans, model names and limits were reshuffled several times in 2026. Treat this table as a snapshot and confirm on the provider's page before you pay.
+### Where to find them
+
+| Assistant | Website |
+|---|---|
+| Claude (Anthropic) | [claude.ai](https://claude.ai) |
+| ChatGPT (OpenAI) | [chatgpt.com](https://chatgpt.com) |
+| Gemini (Google) | [gemini.google.com](https://gemini.google.com) |
+| Copilot (Microsoft) | [copilot.microsoft.com](https://copilot.microsoft.com) |
+| Perplexity | [perplexity.ai](https://www.perplexity.ai) |
+| Grok (xAI) | [grok.com](https://grok.com) |
+| Brave Leo (built into the Brave browser) | [brave.com/leo](https://brave.com/leo/) |
+| Comet (Perplexity's AI browser) | [perplexity.ai/comet](https://www.perplexity.ai/comet) |
+| Leonardo.Ai (images and video) | [leonardo.ai](https://leonardo.ai) |
+
+### 1. Everyday questions, writing and brainstorming
+
+Good for drafting a message, explaining a topic, planning a trip or sorting out ideas.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| Claude Free | Free | Sonnet and Haiku models, web search, file creation, memory | [claude.com/pricing](https://claude.com/pricing) |
+| ChatGPT Free | Free | Unlimited text chats on GPT-6 Luna (fair-use rules apply), limited images and voice. May show ads | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| Gemini Free | Free | Gemini 3.5 Flash-Lite, image generation, Gemini Live voice chat | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Copilot Free | Free | Copilot in the browser and Windows, with usage limits | [copilot.microsoft.com](https://copilot.microsoft.com) |
+| Grok Free | Free | Limited access on grok.com and inside X | [grok.com/plans](https://grok.com/plans) |
+| Google AI Plus | $4.99 | 2x the free usage, Gemini 3.6 Flash and 3.1 Pro | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| ChatGPT Go | $8 | More messages, uploads and images than Free. May show ads | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| SuperGrok Lite | $10 | Entry-level paid Grok | [grok.com/plans](https://grok.com/plans) |
+| Google AI Pro | $19.99 | 4x the free usage and 5 TB of storage | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Claude Pro | $20 | Opus, Sonnet and Haiku with at least 5x the free usage | [claude.com/pricing](https://claude.com/pricing) |
+| ChatGPT Plus | $20 | The newest GPT-6 models with expanded limits | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| SuperGrok | $30 | Newest Grok models with higher limits | [grok.com/plans](https://grok.com/plans) |
+
+### 2. Asking questions about the web page you are reading
+
+A browser assistant sits in a side panel, reads the page (or your open tabs) and answers questions about it. Typical uses are summarising a long article, explaining jargon in a contract, comparing two products or translating a page.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| Brave Leo | Free | Built into the Brave browser. Summarises pages and videos and answers questions using open models. Rate-limited, and no account is needed | [brave.com/leo](https://brave.com/leo/) |
+| Gemini in Chrome | Free (where available) | Side panel in Chrome that summarises the page, compares tabs and explains anything you point at. Rollout started in the US, so it may not be in your country yet | [gemini.google/overview/gemini-in-chrome](https://gemini.google/overview/gemini-in-chrome/) |
+| Copilot Mode in Edge | Free (limits apply) | Opt-in mode in Microsoft Edge on Windows and Mac that can see your open tabs and answer questions about them. Microsoft launched it as free "for a limited time", so check the current terms | [microsoft.com/edge](https://www.microsoft.com/en-us/edge/ai-powered/copilot-mode/faqs) |
+| Comet (Perplexity) | Free | A whole browser with an assistant on every page that summarises, chats with your tabs and does basic tasks | [perplexity.ai/comet](https://www.perplexity.ai/comet) |
+| Brave Leo Premium | $14.99 (or $149.99 a year) | Adds Claude and DeepSeek models and higher limits | [brave.com/leo](https://brave.com/leo/) |
+| Claude in Chrome | $20 (Claude Pro) | Reads the page you are signed in to and answers questions about it | [claude.com/claude-in-chrome](https://claude.com/claude-in-chrome) |
+
+### 3. Letting the AI click, fill in forms and run errands in the browser
+
+These "agent" features go further than answering questions. They can click, type and move between pages for you. They are also the riskiest: a web page can hide instructions that try to trick the AI. Avoid banking, health records and anything involving passwords, and check each step before approving it.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| Comet (Perplexity) | Free | The free assistant can handle basic tasks. The more advanced Background Assistant is reserved for paid plans | [perplexity.ai/comet](https://www.perplexity.ai/comet) |
+| Brave Leo | Free | "Agentic browsing" has been in early testing since May 2026, so expect rough edges | [brave.com/leo](https://brave.com/leo/) |
+| Google AI Pro | $19.99 | Includes Chrome's "auto browse" feature that works through tasks for you | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Claude in Chrome | $20 (Claude Pro) | Clicks, types and fills forms. Stops before purchases and other sensitive actions | [claude.com/claude-in-chrome](https://claude.com/claude-in-chrome) |
+| Perplexity Max | $200 | Comet's Background Assistant and Email Assistant | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
+
+### 4. Working inside Word, Excel and PowerPoint
+
+Instead of copying text out of a chatbot, these add-ins work inside your open file: explaining a cell, building formulas, rewriting a paragraph, turning notes into slides.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| ChatGPT Free | Free | Limited use of ChatGPT's Excel, Word and PowerPoint add-ins | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| ChatGPT Go | $8 | Same add-ins, still limited | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| Microsoft 365 Personal | $9.99 | Copilot inside Word, Excel, PowerPoint and Outlook for the subscriber | [microsoft.com](https://www.microsoft.com/en-au/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf) |
+| Google AI Pro | $19.99 | Gemini inside Gmail, Docs and Vids for Google's own apps | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Microsoft 365 Premium | $19.99 | Highest Copilot usage in the Office apps | [microsoft.com](https://www.microsoft.com/en-au/microsoft-365/p/microsoft-365-premium/cfq7ttc11z3q) |
+| Claude Pro | $20 | Claude for Excel, PowerPoint and Word: edits with tracked changes, formulas that keep working, slides in your own template | [claude.com/claude-for-microsoft-365](https://claude.com/claude-for-microsoft-365) |
+| ChatGPT Plus | $20 | Full access to the Excel, Word, PowerPoint and Google Sheets add-ins | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+
+### 5. Email and calendar
+
+Useful for summarising a long thread, drafting a reply, sorting your inbox or finding a meeting time. Check every draft before sending, because the AI does not know your relationships or what you left out.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| Gemini in Chrome | Free (where available) | Can draft an email or a post from the page you have open | [gemini.google/overview/gemini-in-chrome](https://gemini.google/overview/gemini-in-chrome/) |
+| Any free chatbot above | Free | Paste in the thread (with names and private details removed) and ask for a draft reply | |
+| Google AI Plus | $4.99 | Gemini inside Gmail | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Microsoft 365 Personal | $9.99 | Copilot inside Outlook | [microsoft.com](https://www.microsoft.com/en-au/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf) |
+| Google AI Pro | $19.99 | Gemini inside Gmail and Docs | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Claude Pro | $20 | Claude for Outlook (beta): sorts your inbox, writes replies that wait for you to press send, finds meeting times | [claude.com/claude-for-microsoft-365](https://claude.com/claude-for-microsoft-365) |
+| Perplexity Max | $200 | Email Assistant in the Comet browser | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
+
+### 6. Research with sources
+
+Good for comparing products, background reading and questions where you want links you can check yourself. Always open the sources, because an AI can cite a page that does not say what it claims.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| Perplexity Free | Free | Answers with linked sources, with a small daily number of advanced searches | [perplexity.ai](https://www.perplexity.ai) |
+| Gemini Free | Free | Deep Research reports | [gemini.google.com](https://gemini.google.com) |
+| ChatGPT Free | Free | Limited deep research and web search | [chatgpt.com](https://chatgpt.com) |
+| Claude Free | Free | Web search (the full Research mode needs a paid plan) | [claude.ai](https://claude.ai) |
+| ChatGPT Go | $8 | Limited deep research with more usage than Free | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| Google AI Pro | $19.99 | Higher Deep Research limits and a 1M-token context window for long documents | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Claude Pro | $20 | Research mode and projects for organising your sources | [claude.com/pricing](https://claude.com/pricing) |
+| ChatGPT Plus | $20 | Expanded deep research | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| Perplexity Pro | $20 | Higher research limits, more file uploads and a choice of models | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
+
+### 7. Coding help
+
+Includes explaining code, fixing bugs, writing small scripts and building simple websites.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| Google AI Studio | Free | Experiment with Gemini models, with no cost to start | [aistudio.google.com](https://aistudio.google.com) |
+| Google Antigravity | Free | Coding agents with basic weekly limits | [antigravity.google](https://antigravity.google/pricing) |
+| ChatGPT Free | Free | Limited Codex access | [chatgpt.com/codex](https://chatgpt.com/codex/) |
+| Claude Free | Free | Chat-based coding help (Claude Code needs a paid plan) | [claude.ai](https://claude.ai) |
+| Google AI Pro | $19.99 | Higher limits in Jules and Antigravity | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Claude Pro | $20 | Claude Code included, sharing your plan's usage | [claude.com/product/claude-code](https://claude.com/product/claude-code) |
+| ChatGPT Plus | $20 | Expanded Codex usage | [chatgpt.com/codex](https://chatgpt.com/codex/) |
+
+### 8. Pictures and video
+
+For invitations, story illustrations, garden ideas and short clips. Label AI-made images honestly if someone could mistake them for a real photo.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| Gemini Free | Free | Image generation and editing | [gemini.google.com](https://gemini.google.com) |
+| ChatGPT Free | Free | Limited image creation | [chatgpt.com](https://chatgpt.com) |
+| Copilot Free | Free | Simple image requests, with usage limits | [copilot.microsoft.com](https://copilot.microsoft.com) |
+| Leonardo.Ai Free | Free | 150 tokens a day. Your creations are public, so avoid private photos, and check the terms before commercial use | [leonardo.ai](https://leonardo.ai) |
+| Google AI Plus | $4.99 | Video generation and 200 Flow credits | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| ChatGPT Go | $8 | More image creation than Free | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| SuperGrok Lite | $10 | Grok Imagine at 480p | [grok.com/plans](https://grok.com/plans) |
+| Leonardo.Ai Essential | $12 | 8,500 tokens a month, private creations, more control over style | [leonardo.ai](https://leonardo.ai) |
+| Google AI Pro | $19.99 | 1,000 Flow credits and a limited trial of Veo video generation | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| ChatGPT Plus | $20 | Image creation with reasoning | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| Leonardo.Ai Premium | $30 | 25,000 tokens a month, unlimited relaxed-speed images on Leonardo's own models | [leonardo.ai](https://leonardo.ai) |
+| Leonardo.Ai Ultimate | $60 | 60,000 tokens a month, unlimited relaxed-speed video | [leonardo.ai](https://leonardo.ai) |
+
+### 9. Heavy, all-day use
+
+Worth considering only if you hit the limits of the $20 plans most days.
+
+| Option | Cost as of Oct 2026 | What you get | Link |
+|---|---|---|---|
+| Google AI Ultra | $99.99 or $199.99 | 5x or 20x the AI Pro usage, 20 TB of storage | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Claude Max 5x | $100 | 5x Pro usage, Fable model included, $100 a month of API credits | [claude.com/pricing](https://claude.com/pricing) |
+| ChatGPT Pro 100 | $100 | Pro-level reasoning and much higher limits | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| Claude Max 20x | $200 | 20x Pro usage, $200 a month of API credits | [claude.com/pricing](https://claude.com/pricing) |
+| ChatGPT Pro 200 | $200 | More usage than Pro 100 | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| Perplexity Max | $200 | Highest limits and 10,000 agent credits a month | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
+| SuperGrok Heavy | $300 | Highest Grok limits and the multi-agent Grok 4 Heavy | [grok.com/plans](https://grok.com/plans) |
+| ChatGPT Pro 500 | $500 | Highest ChatGPT usage and Ultrafast mode | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+
+*Features and prices change often. Browser assistants in particular are rolling out country by country, so confirm on the provider's page that a feature is available where you live before you pay.*
+
 
 
 ## Closing thought
