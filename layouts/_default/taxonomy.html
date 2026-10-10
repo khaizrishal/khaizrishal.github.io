@@ -1,0 +1,15 @@
+{{ define "title" }}
+<h1 class="bold-title is-1">{{ .Data.Singular | humanize }}: {{ lower .Title | markdownify }}</h1>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+    <ul>
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

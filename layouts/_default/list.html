@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container markdown top-pad">
+    {{ .Content }}
+</div>
+<div class="container">
+    <ul>
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+</body>
+{{ end }}
