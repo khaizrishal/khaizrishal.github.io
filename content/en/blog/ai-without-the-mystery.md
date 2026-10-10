@@ -23,28 +23,6 @@ AI can be helpful, surprising and sometimes very dangerous to use. You do not ne
   - making predictions
   - decisions based on reasoning
 
-## The stages of an AI model: from learning to answering
-An AI assistant is not created in one step. A useful way to picture its life is: prepare examples, train a model to find patterns, tune how it responds, then run it each time someone asks a question.
-### Gather and prepare data
-- Manually collect data suited to the task, such as text or labelled pictures for an image classification. 
-- The materials are cleaned up and organised so it can be processed by computers.
-- The quality of data shapes what and how model learns.
-### Train the model
-- During **training**, computers adjust a model’s internal numbers or weights as its called so it gets better at a task.
-- This takes specialised chips working together in data centres. 
-- **A striking estimate:** researchers estimate that one training run for OpenAI’s GPT-3 used about **1,287 megawatt-hours (MWh)** of electricity enough to power **119 US homes for an entire year** (remember we are at GPT-6 now).
-- Refernce 
-  - [Research estimate for GPT-3](https://arxiv.org/abs/2104.10350) 
-  - [US household electricity figures](https://www.eia.gov/tools/faqs/faq.php?id=97&t=4)
-### Fine Tune its behaviour
-- A trained model may then be **fine-tuned** with more focused tasks such as question-and-answering. 
-- Responses more useful and safer with techniques like Human Feedbacks.
-- This stage shapes how the model responds. It does not guarantee that every answer is correct, fair or safe.
-### Run it: inference
-- **Inference** is the name for using this model. 
-- When you ask it a question aka - prompt, the model processes it and generates an answer. if you see the output of chatgpt carefully you can see the tokens being generated.
-- Each request uses computing resources and electricity. 
-
 ## Tokens
 - Broadly speaking, AI falls into two main categories:
   - **Generative AI**: Generats new content such as text, images, music or code from a prompt. e.g. Chatbots, Image generation.
@@ -57,7 +35,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Many AI providers charge you by how many tokens a prompt and reply use. You can approximate it as 4 token for every 3 english words. E.g. 1,000-word message might use roughly 1,300 to 1,500 tokens. Some plans include a monthly token allowance, while others charge extra once you pass the limit. 
 - The point is simple: long prompts, long answers and many generations can use up a monthly allocation quickly.
 - https://platform.openai.com/tokenizer
-- 
+
 <img src="/img/tokenizer.png" alt="How a chatbot breaks text into tokens" width="700">
 
 ## The stages of an AI model: from learning to answering
@@ -90,7 +68,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - After release, providers monitor performance, fix problems and may update the software, its instructions or the model itself. A major new model can require another training process.
 - A lot of models use the information we give and our usage pattern to further train the model.
 
-
+<img src="/img/inference.gif" alt="Inference: a chatbot generating an answer token by token" width="700">
 
 ### Can I trust what AI tells me?
 
@@ -99,7 +77,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
   - Ask for a first draft of a speech: excellent task.
   - Ask whether your chest pain is dangerous: wrong task. The apprentice cannot examine you, take responsibility or call an ambulance.
   - Ask for the opening hours of a local shop: it may know, but the shop’s own website or a phone call is the better source.
-- **Hallucination: confident and wrong.** Because the AI predicts the most likely next words rather than looking up a fact, it can produce an answer that reads perfectly but is untrue. This is called a **hallucination**. It can invent names, dates, quotes, statistics, laws, references and even whole web pages, and it presents them with total confidence.
+- **confident and wrong.** Because the AI predicts the most likely next words rather than looking up a fact, it can produce an answer that reads perfectly but is untrue. This is called a “confabulation”**onfabulation** or **hallucination**. It can invent names, dates, quotes, statistics, laws, references and even whole web pages, and it presents them with total confidence.
 - **An example with real consequences.** In 2023 a New York lawyer asked ChatGPT to find earlier cases that supported his argument. It produced six cases that did not exist, complete with convincing names, judges and quotes. The lawyer filed them in court without checking, and the judge later fined the lawyers and their firm $5,000 for relying on fake citations.
 - **A small error, an enormous cost.** In February 2023 Google showed off its chatbot Bard with an advert that claimed the James Webb Space Telescope had taken the first picture of a planet outside our solar system. That was wrong: the first such image came in 2004 from the European Southern Observatory’s Very Large Telescope. Astronomers spotted the mistake within hours, and Alphabet’s share price fell sharply that day, at one point wiping about US$100 billion from the company’s value.
 - **How to check before you trust.** Treat every answer as a first draft, not a fact.
@@ -110,22 +88,54 @@ An AI assistant is not created in one step. A useful way to picture its life is:
   - Redo any arithmetic with a calculator.
   - If the answer affects your health, money, safety or rights, confirm it with a real person before you act.
 
-
-## 2. How a chatbot makes an answer
-
-- During training, developers show a model enormous amounts of examples and use mathematics to help it detect patterns in language, images or sound.
-- When you type a question, it predicts a useful-looking response from those patterns. It is not automatically checking every sentence against a reliable reference book.
-- Your wording matters. “Tell me about gardening” is broad. “Give me three ways to protect tomato plants from frost in coastal Victoria and say what I should check locally” gives the assistant a clearer job.
-- A chatbot has no magic access to your private records, government files or family history unless you provide them or connect an account to a service that has them.
-- **Aha moment:** asking the same question twice can bring different answers. A generative system is making a fresh prediction, not retrieving one fixed card from a catalogue.
-- A polished paragraph is evidence that the system is good at writing. It is **not** evidence that the paragraph is true.
-
-### Why can it be wrong with such confidence?
-
 - AI can produce a “confabulation”, often called a hallucination: a false detail, source, event or explanation stated as if it were true.
 - It may invent a book title, mix up two people with similar names or give a citation that looks real but does not exist.
 - The United States National Institute of Standards and Technology notes that generative systems can confidently generate false material and even false citations. [NIST’s Generative AI Profile](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388) explains why this is a known risk.
 - Do not argue with it as though it is hiding the truth. Ask for sources, then check the sources yourself.
+
+
+## How can you ask a right prompt
+
+### Five questions that make AI answers better
+
+- **What is the job?** “Write”, “summarise”, “compare”, “make a checklist” or “help me practise” gives it a clear role.
+- **Who is it for?** “Use plain Australian English for a 75-year-old beginner.”
+- **What limits matter?** “Keep it under 150 words” or “give only three options.”
+- **What should it show?** “State your assumptions and link to official sources.”
+- **What must it avoid?** “Do not invent facts. If you are unsure, say so.”
+
+### A prompt you can copy
+
+> Explain **[topic]** in plain language for a beginner. Give me three key points, one everyday example and three questions I can use to check the information with an official source. If a fact may have changed recently, say that clearly.
+
+### Improve a weak prompt
+
+- Weak: “Help me make a shopping list.”
+- Better: “Help me make a shopping list for three easy vegetarian dinners for one person, avoid nuts and keep the ingredients inexpensive.”
+- The answer improved because you supplied the audience, limits and context.
+
+- **Aha moment:** a good prompt is not a test of cleverness. It is simply good communication: tell the assistant the audience, purpose and boundaries.
+
+## What information can you share and not share in your prompts
+
+- Before pasting anything into an AI service, imagine it printed on a postcard. Would you be comfortable if a stranger read it?
+- Share **general and made-up details** wherever they will do the job.
+  - Instead of: “My neighbour Margaret Jones at 14 Rose Street has dementia. Write a message to her son.”
+  - Try: “Write a kind message to a family member about helping an older neighbour who has memory difficulties.”
+- Remove names, addresses, dates of birth, account numbers, customer numbers and licence or passport details.
+- Never enter passwords, one-time codes, PINs, security-question answers or recovery codes. A genuine bank or government agency will not need these in a chatbot.
+- Do not upload a photograph of a passport, Medicare card, bank statement, tax document, medical report or legal document to a public AI tool.
+- Treat health information, finances, location history, family photos, voice recordings and private messages as especially sensitive.
+- Ask before entering information about another person. Their privacy belongs to them too.
+- The Office of the Australian Information Commissioner explains that personal information can include names, contact details, identifiable images and information that can reasonably be linked back to a person. [Read the OAIC guidance on AI and privacy](https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-developing-and-training-generative-ai-models).
+
+### A safer way to ask
+
+- Say what outcome you want without supplying the identifying detail.
+- “Help me make a list of questions for a specialist about a knee replacement.”
+- “Give me a calm script for asking a bank to explain an unfamiliar charge.”
+- “Create a simple household budget template with rent, food, transport and medicines.”
+- Then put your real details into your own private document, not the chatbot.
 
 
 
@@ -170,42 +180,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Sending money, passwords or identification because a message, image or voice recording seems persuasive.
 - **Aha moment:** AI can help you prepare a question for an expert. It is not the expert who accepts responsibility for the answer.
 
-## 4. What to share and what to keep to yourself
-
-- Before pasting anything into an AI service, imagine it printed on a postcard. Would you be comfortable if a stranger read it?
-- Share **general and made-up details** whenever they will do the job.
-  - Instead of: “My neighbour Margaret Jones at 14 Rose Street has dementia. Write a message to her son.”
-  - Try: “Write a kind message to a family member about helping an older neighbour who has memory difficulties.”
-- Remove names, addresses, dates of birth, account numbers, customer numbers and licence or passport details.
-- Never enter passwords, one-time codes, PINs, security-question answers or recovery codes. A genuine bank or government agency will not need these in a chatbot.
-- Do not upload a photograph of a passport, Medicare card, bank statement, tax document, medical report or legal document to a public AI tool.
-- Treat health information, finances, location history, family photos, voice recordings and private messages as especially sensitive.
-- Ask before entering information about another person. Their privacy belongs to them too.
-- The Office of the Australian Information Commissioner explains that personal information can include names, contact details, identifiable images and information that can reasonably be linked back to a person. [Read the OAIC guidance on AI and privacy](https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-developing-and-training-generative-ai-models).
-
-### A safer way to ask
-
-- Say what outcome you want without supplying the identifying detail.
-- “Help me make a list of questions for a specialist about a knee replacement.”
-- “Give me a calm script for asking a bank to explain an unfamiliar charge.”
-- “Create a simple household budget template with rent, food, transport and medicines.”
-- Then put your real details into your own private document, not the chatbot.
-
-## 5. Five questions that make AI answers better
-
-- **What is the job?** “Write”, “summarise”, “compare”, “make a checklist” or “help me practise” gives it a clear role.
-- **Who is it for?** “Use plain Australian English for a 75-year-old beginner.”
-- **What limits matter?** “Keep it under 150 words” or “give only three options.”
-- **What should it show?** “State your assumptions and link to official sources.”
-- **What must it avoid?** “Do not invent facts. If you are unsure, say so.”
-
-### A prompt you can copy
-
-> Explain **[topic]** in plain language for a beginner. Give me three key points, one everyday example and three questions I can use to check the information with an official source. If a fact may have changed recently, say that clearly.
-
-- **Aha moment:** a good prompt is not a test of cleverness. It is simply good communication: tell the assistant the audience, purpose and boundaries.
-
-## 6. The “pause, prove, proceed” check
+## 4. The “pause, prove, proceed” check
 
 - **Pause.** Is the answer asking you to act quickly, spend money, share data or make a health or legal decision? If so, slow down.
 - **Prove.** Find the original source. For Australian government information, look for an official `gov.au` website. For a medicine, check the pharmacist, doctor or official medicine information. For a bank, use the number printed on your card or statement.
@@ -227,7 +202,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Search the relevant state or federal government website yourself. Check the programme name, eligibility, closing date and application method.
 - If the offer is genuine, an official page will explain it. If it is not, you have saved yourself money and worry.
 
-## 7. AI scams: the new voice is not proof
+## 5. AI scams: the new voice is not proof
 
 - Scammers use the same tools we do, including tools that can imitate a voice, create a picture or write an urgent message with excellent grammar.
 - A frightening call may say: “Grandma, I have had an accident. Please do not tell Mum. Send money now.” It may sound exactly like a loved one.
@@ -246,7 +221,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - A request for a code that was sent to your phone. That code is often the key to your account.
 - When in doubt, stop and talk to someone. A second pair of eyes is a powerful security tool.
 
-## 8. Practical device safety, without the jargon
+## 6. Practical device safety, without the jargon
 
 - Use a different, long password for each important account. A password manager can remember them for you.
 - Turn on two-factor authentication where available. It means a password alone is not enough to enter your account.
@@ -257,7 +232,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Be careful with browser extensions that promise “free AI”. An extension may be able to read what you see or type in the browser.
 - Australia’s cyber security guidance emphasises that security supports the safety, privacy and reliability of AI systems. [Cyber.gov.au’s AI security guidance](https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/guidelines-for-secure-ai-system-development) is a useful reminder that convenience and safety should travel together.
 
-## 9. Keep your human skills in the picture
+## 7. Keep your human skills in the picture
 
 - AI is strong at speed, first drafts and finding patterns in a large amount of text.
 - People are strong at values, relationships, context, compassion and deciding what is worth doing.
@@ -267,7 +242,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Do not be embarrassed to walk away. You do not owe a chatbot, an advert or a caller an immediate reply.
 - **Aha moment:** the most valuable skill in the age of AI may be the old-fashioned one: knowing when to pause and ask a good question.
 
-## 10. Pictures, videos and “too good to be true” evidence
+## 8. Pictures, videos and “too good to be true” evidence
 
 - A photograph used to feel like strong evidence. Now it may be real, edited, generated or taken from somewhere else and given a false caption.
 - Do not try to become a detective by staring at every eyelash or shadow. Image quality is not a dependable test on its own.
@@ -288,7 +263,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Do not use the link. Search for the presenter’s verified account and their official website. Search the investment name plus the word “scam”.
 - Discuss any investment with a licensed financial professional you have contacted independently. A familiar face in a video is marketing, not proof.
 
-## 11. How to use AI alongside people, not instead of them
+## 9. How to use AI alongside people, not instead of them
 
 - Use a chatbot before an appointment to organise your thoughts. Take a printed list of questions to the real person.
 - Use it after an appointment to turn **your own non-sensitive notes** into plain-language reminders. Do not treat the result as a clinical record.
@@ -305,7 +280,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - “What information should I never enter into this service?”
 - These questions are not silly. They are exactly the questions careful people ask.
 
-## 12. Common mistakes and easy replacements
+## 10. Common mistakes and easy replacements
 
 - **Mistake:** asking, “Can I trust AI?”
   - **Better question:** “Can I trust this particular answer for this particular decision after checking it?”
@@ -320,7 +295,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - **Mistake:** feeling embarrassed after nearly falling for a scam.
   - **Better approach:** tell someone promptly. Scams are designed to rush and manipulate capable people. Fast reporting can protect you and others.
 
-## 13. A short group activity for a talk or community class
+## 11. A short group activity for a talk or community class
 
 - Read this request aloud: “Write a warm invitation to a neighbourhood afternoon tea.”
 - Ask the group what could safely be included: the public venue, date, time and a request to RSVP.
@@ -331,7 +306,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Ask what it must not do: decide the text is genuine, open the link, access the bank account or tell someone to share a code.
 - Finish with the sentence everyone can remember: **“I verify through the official channel I find myself.”**
 
-## 14. A gentle 10-minute practice session
+## 12. A gentle 10-minute practice session
 
 - Choose a low-risk task. For example: “Help me make a shopping list for three easy vegetarian dinners.”
 - Read the answer and improve the request: “Make it suitable for one person. Avoid nuts. Keep the ingredients inexpensive.”
@@ -340,7 +315,7 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Now practise checking: find the library’s official website or call it. Notice that the chatbot’s answer is only a starting point.
 - Finish by writing one rule on paper: “I will not enter passwords, codes, bank details or private documents into a chatbot.” Put it near your device.
 
-## 15. A pocket checklist for every AI interaction
+## 13. A pocket checklist for every AI interaction
 
 - What am I trying to achieve?
 - Is this a low-stakes task or a decision that could affect health, money, safety or rights?

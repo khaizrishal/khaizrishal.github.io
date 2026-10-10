@@ -15,7 +15,7 @@ title                            = "Simply Learn AI"
     dateFormat                   = "Jan 2, 2006"
     email                        = "hello@example.com"      # E-mail address for contact section
     customCSS                    = ["css/custom.css"]      # Include custom css files placed under assets/
-    # customJS                   = ["foo.js"]              # Include custom JavaScript files placed under assets/
+    customJS                     = ["js/lightbox.js"]      # Include custom JavaScript files placed under assets/
 
     # Configure the home page
     [params.home]
