@@ -14,81 +14,73 @@ AI can be helpful, surprising and sometimes very dangerous to use. You do not ne
 - **Spot scams and fakes** - tips to spot AI scams that can look convincing.
 - **Check before you act** - when health, money or safety is at stake.
 
-## Introduction
+## Introduction:
 
-**Artificial intelligence (AI)** is the capability of a system to perform tasks typically associated with human intelligence. A few examples:
+- **Artificial intelligence (AI)** is capability of a system to perform tasks typically associated with human intelligence. Few examples:
+  - recognising patterns
+  - comprehending text 
+  - generating language
+  - making predictions
+  - decisions based on reasoning
+- Broadly speaking, AI falls into two main categories:
+  - **Generative AI**: systems that create new content such as text, images, music or code from a prompt. Think of chatbots, image tools and writing assistants.
+  - **Predictive AI**: systems that analyse patterns in data to estimate what is likely to happen next. Think of spam filters, recommendation systems and forecasting tools.
+- Yes — when most people talk about AI in everyday life, they are usually referring to **Generative AI**: systems like ChatGPT, Claude or Gemini that can produce words, pictures, sound or computer code from a prompt. 
+- Now is it neceassary to know this? Probably not if you dont already know about it.
+- To understand how AI works in our case - think of it like your mobile-phone keyboard autocomplete. 
+  - By the time you have typed-in part of your sentence it would recommend a bunch of next possible words, or 
+  - if you are half way with a word - a recommendation to complete it. 
+- It builds one small piece at a time until you complete it.
+- if I ask a layman how this works - he or she would describe it this way - the phone would **recommend** the next set of **probable** **words or alphabets** **best suited** to **complete the sentence**.
+- These pieces are called **tokens**. Many AI providers charge by how many tokens a prompt and reply use. You can approximate it as 4 token for every 3 english words. E.g. 1,000-word message might use roughly 1,300 to 1,500 tokens. Some plans include a monthly token allowance, while others charge extra once you pass the limit. 
+- The point is simple: long prompts, long answers and many generations can use up a monthly allocation quickly.
 
-- recognising patterns
-- comprehending text
-- generating language
-- making predictions
-- making decisions based on reasoning
 
-Broadly speaking, AI falls into two main categories:
+## Do I have to pay to use AI?
+ - What you call as AI and it's application an extension of this ability that lets it do anything from:
+  - Answer questions in ChatGPT, draft emails, translate language and assist with complex tasks.
+  - It can take decision based and make machinery respond based on sensor information.
+  - Even take complex areas like medicines and weaponary very comparable to what a human can do sometimes even better and faster.
+- if you see carefully the AI Chatbots (in whats called a streaming mode) you can see it generating a part of a word at a time, its called a token. For simplicity of calculation for 1 token is about 75% of an word in English.
+- Its like a music mixing console where you have faders, knobs, swtiches buttons similarly you have parameters here to name a few - parameters increase temperature AI become extrememly imaginative put the temperature to 0 it produces a better more consistent output - based on this you can use AI for creative writing or for drafting a legal document.
+- Similarly you can do a role play with it - this is another way to influence how the AI responds to you.
+- Finally in the world before Chatgpt we used to have software code to do lots of things like making calls, converting audio to text etc... you may give AI access to these capabilities - as tools AI will be able to use it based on situation.
+- If you ask me whats missing in AI is the concisousness. personally i see emotions, principles, culture etc associated with words, sentences and semantics, information which is missing in the training data. This is another dimension to the language which AI isn't aware of. e.g you could use abusive language on AI and it would always respond is a composed way - while this is the best way to respond, human often has various degrees of patience, culture and other things drive how a person responds to such situations.
+- this is good and bad because as human there is an element of humanity which we can't be 100% sure if it is built into the AI model or not.
 
-- **Generative AI**: systems that create new content such as text, images, music or code from a prompt. Think of chatbots, image tools and writing assistants.
-- **Predictive AI**: systems that analyse patterns in data to estimate what is likely to happen next. Think of spam filters, recommendation systems and forecasting tools.
+### Can I trust what AI tells me?
+- A simple picture in your mind
+  - Imagine a keen apprentice who has learnt from millions of books, code, social media feeds, news and listened to many conversations.
+  - Ask for a first draft of a speech: excellent task.
+  - Ask whether your chest pain is dangerous: wrong task. The apprentice cannot examine you, take responsibility or call an ambulance.
+  - Ask for the opening hours of a local shop: it may know, but the shop’s own website or a phone call is the better source.
 
-When most people talk about AI in everyday life, they usually mean **Generative AI**: systems like ChatGPT, Claude or Gemini that can produce words, pictures, sound or computer code from a prompt.
-
-Is it necessary to know this? Probably not, if you do not already know about it. To understand how AI works, think of the autocomplete on your mobile-phone keyboard.
-
-- By the time you have typed part of a sentence, it recommends a bunch of next possible words, or
-- if you are halfway through a word, it recommends a way to complete it.
-
-It builds one small piece at a time until the sentence is complete. If you asked a layman how this works, he or she would describe it this way: the phone would **recommend** the next set of **probable words or letters** that are **best suited** to **complete the sentence**.
-
-### If I take a subscription, how do I compare the cost of different providers?
-
-Those small pieces are called *tokens*. Many AI providers charge by how many tokens a prompt and reply use. A token is not always a full word, and the exact count varies by model and provider. In English, one token is often about three-quarters of a word, so a 1,000-word message might use roughly 1,300 to 1,500 tokens. Some plans include a monthly token allowance, while others charge extra once you pass the limit. The point is simple: long prompts, long answers and many generations can use up a monthly allocation quickly.
-
-What we call AI today, and its applications, is an extension of this ability. It lets AI do anything from:
-
-- answer questions in ChatGPT, draft emails, translate language and assist with complex tasks;
-- make decisions and make machinery respond based on sensor information;
-- tackle complex areas like medicine and weaponry, sometimes comparably to what a human can do - and sometimes even better and faster.
-
-If you look carefully at AI chatbots (in what is called *streaming mode*), you can see them generating a part of a word at a time. That piece is called a token. For simplicity, count 1 token as about 75% of a word in English.
-
-Think of a music mixing console with faders, knobs, switches and buttons. AI has parameters like these, to name a few. Increase the *temperature* and AI becomes extremely imaginative; set it to 0 and it produces a more consistent output. Based on this, you can use AI for creative writing or for drafting a legal document. You can also do a *role play* with it - another way to influence how the AI responds to you.
-
-Before ChatGPT, we used to have software code to do lots of things like making calls or converting audio to text. You may give AI access to these capabilities as *tools*, and the AI will be able to use them based on the situation.
-
-If you ask me what is missing in AI, it is consciousness. Personally, I see emotions, principles and culture associated with words, sentences and meaning - information that is missing from the training data. This is another dimension of language that AI is not aware of. You could use abusive language on AI and it would always respond in a composed way. While that is the best way to respond, humans often have various degrees of patience, culture and other things that drive how a person reacts in such situations. This is both good and bad, because as humans there is an element of humanity that we cannot be 100% sure is built into the AI model or not.
-
-## A simple picture in your mind
-
-- Imagine a keen apprentice who has read millions of books and listened to many conversations.
-- Ask for a first draft of a speech: excellent task.
-- Ask whether your chest pain is dangerous: wrong task. The apprentice cannot examine you, take responsibility or call an ambulance.
-- Ask for the opening hours of a local shop: it may know, but the shop's own website or a phone call is the better source.
-
-## How a chatbot makes an answer
+## 2. How a chatbot makes an answer
 
 - During training, developers show a model enormous amounts of examples and use mathematics to help it detect patterns in language, images or sound.
 - When you type a question, it predicts a useful-looking response from those patterns. It is not automatically checking every sentence against a reliable reference book.
-- Your wording matters. "Tell me about gardening" is broad. "Give me three ways to protect tomato plants from frost in coastal Victoria and say what I should check locally" gives the assistant a clearer job.
+- Your wording matters. “Tell me about gardening” is broad. “Give me three ways to protect tomato plants from frost in coastal Victoria and say what I should check locally” gives the assistant a clearer job.
 - A chatbot has no magic access to your private records, government files or family history unless you provide them or connect an account to a service that has them.
 - **Aha moment:** asking the same question twice can bring different answers. A generative system is making a fresh prediction, not retrieving one fixed card from a catalogue.
 - A polished paragraph is evidence that the system is good at writing. It is **not** evidence that the paragraph is true.
 
 ### Why can it be wrong with such confidence?
 
-- AI can produce a "confabulation", often called a hallucination: a false detail, source, event or explanation stated as if it were true.
-- It may invent a book title, mix up two people with similar names, or give a citation that looks real but does not exist.
-- The United States National Institute of Standards and Technology notes that generative systems can confidently generate false material and even false citations. [NIST's Generative AI Profile](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388) explains why this is a known risk.
+- AI can produce a “confabulation”, often called a hallucination: a false detail, source, event or explanation stated as if it were true.
+- It may invent a book title, mix up two people with similar names or give a citation that looks real but does not exist.
+- The United States National Institute of Standards and Technology notes that generative systems can confidently generate false material and even false citations. [NIST’s Generative AI Profile](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388) explains why this is a known risk.
 - Do not argue with it as though it is hiding the truth. Ask for sources, then check the sources yourself.
 
-## The traffic-light rule: where AI fits
+## 3. The traffic-light rule: where AI fits
 
 ### Green light: useful, low-stakes jobs
 
 - Brainstorming meal ideas from ingredients you already have.
 - Turning rough notes into a polite email, birthday message or club newsletter.
-- Explaining a familiar topic in simpler words: "Explain superannuation as if I am new to it."
+- Explaining a familiar topic in simpler words: “Explain superannuation as if I am new to it.”
 - Making a packing checklist for a trip after you supply the destination and dates.
 - Suggesting questions to take to a doctor, lawyer, mechanic or financial adviser.
-- Practising a conversation: "Pretend you are the receptionist. Help me rehearse booking an appointment."
+- Practising a conversation: “Pretend you are the receptionist. Help me rehearse booking an appointment.”
 - Summarising a public article that you paste in, while checking the original before passing it on.
 - Generating a quiz for a family gathering or ideas for a hobby project.
 
@@ -105,16 +97,16 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
 - Emergencies, symptoms that need urgent care, changing or stopping medicine and interpreting test results.
 - Deciding whether to invest, borrow money, buy cryptocurrency or make a major financial move.
 - Legal deadlines, signing contracts, wills, immigration matters or tax lodgements.
-- Sharing a private family dispute, someone else's health details or confidential work information.
+- Sharing a private family dispute, someone else’s health details or confidential work information.
 - Sending money, passwords or identification because a message, image or voice recording seems persuasive.
 - **Aha moment:** AI can help you prepare a question for an expert. It is not the expert who accepts responsibility for the answer.
 
-## What to share and what to keep to yourself
+## 4. What to share and what to keep to yourself
 
 - Before pasting anything into an AI service, imagine it printed on a postcard. Would you be comfortable if a stranger read it?
 - Share **general and made-up details** whenever they will do the job.
-  - Instead of: "My neighbour Margaret Jones at 14 Rose Street has dementia. Write a message to her son."
-  - Try: "Write a kind message to a family member about helping an older neighbour who has memory difficulties."
+  - Instead of: “My neighbour Margaret Jones at 14 Rose Street has dementia. Write a message to her son.”
+  - Try: “Write a kind message to a family member about helping an older neighbour who has memory difficulties.”
 - Remove names, addresses, dates of birth, account numbers, customer numbers and licence or passport details.
 - Never enter passwords, one-time codes, PINs, security-question answers or recovery codes. A genuine bank or government agency will not need these in a chatbot.
 - Do not upload a photograph of a passport, Medicare card, bank statement, tax document, medical report or legal document to a public AI tool.
@@ -125,18 +117,18 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
 ### A safer way to ask
 
 - Say what outcome you want without supplying the identifying detail.
-- "Help me make a list of questions for a specialist about a knee replacement."
-- "Give me a calm script for asking a bank to explain an unfamiliar charge."
-- "Create a simple household budget template with rent, food, transport and medicines."
+- “Help me make a list of questions for a specialist about a knee replacement.”
+- “Give me a calm script for asking a bank to explain an unfamiliar charge.”
+- “Create a simple household budget template with rent, food, transport and medicines.”
 - Then put your real details into your own private document, not the chatbot.
 
-## Five questions that make AI answers better
+## 5. Five questions that make AI answers better
 
-- **What is the job?** "Write", "summarise", "compare", "make a checklist" or "help me practise" gives it a clear role.
-- **Who is it for?** "Use plain Australian English for a 75-year-old beginner."
-- **What limits matter?** "Keep it under 150 words" or "give only three options."
-- **What should it show?** "State your assumptions and link to official sources."
-- **What must it avoid?** "Do not invent facts. If you are unsure, say so."
+- **What is the job?** “Write”, “summarise”, “compare”, “make a checklist” or “help me practise” gives it a clear role.
+- **Who is it for?** “Use plain Australian English for a 75-year-old beginner.”
+- **What limits matter?** “Keep it under 150 words” or “give only three options.”
+- **What should it show?** “State your assumptions and link to official sources.”
+- **What must it avoid?** “Do not invent facts. If you are unsure, say so.”
 
 ### A prompt you can copy
 
@@ -144,7 +136,7 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
 
 - **Aha moment:** a good prompt is not a test of cleverness. It is simply good communication: tell the assistant the audience, purpose and boundaries.
 
-## The "pause, prove, proceed" check
+## 6. The “pause, prove, proceed” check
 
 - **Pause.** Is the answer asking you to act quickly, spend money, share data or make a health or legal decision? If so, slow down.
 - **Prove.** Find the original source. For Australian government information, look for an official `gov.au` website. For a medicine, check the pharmacist, doctor or official medicine information. For a bank, use the number printed on your card or statement.
@@ -152,28 +144,28 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
 
 ### Three easy fact-checking habits
 
-- Ask: "What are your sources? Give direct links, not just names." Then open them. A link can be wrong or made up, so check that the page exists and actually supports the claim.
+- Ask: “What are your sources? Give direct links, not just names.” Then open them. A link can be wrong or made up, so check that the page exists and actually supports the claim.
 - Search for the key claim in your own words. Compare at least two reliable sources for important matters.
 - Check the date. Rules, prices, opening hours, travel conditions and public figures can change.
 - Look for the **original** source. A hospital, government department, bank, manufacturer or recognised professional body is usually better than a copied social-media post.
 - If the answer uses numbers, redo the arithmetic with a calculator. A chatbot can make basic calculation errors.
-- If you cannot verify it, say "I do not know yet" and ask a person or organisation that does.
+- If you cannot verify it, say “I do not know yet” and ask a person or organisation that does.
 
 ### A smart example: the miracle rebate
 
-- A chatbot says: "You can claim a new $2,000 energy rebate this month." It sounds specific and helpful.
+- A chatbot says: “You can claim a new $2,000 energy rebate this month.” It sounds specific and helpful.
 - Do not fill in a form from the answer or share your utility account number.
 - Search the relevant state or federal government website yourself. Check the programme name, eligibility, closing date and application method.
 - If the offer is genuine, an official page will explain it. If it is not, you have saved yourself money and worry.
 
-## AI scams: the new voice is not proof
+## 7. AI scams: the new voice is not proof
 
 - Scammers use the same tools we do, including tools that can imitate a voice, create a picture or write an urgent message with excellent grammar.
-- A frightening call may say: "Grandma, I have had an accident. Please do not tell Mum. Send money now." It may sound exactly like a loved one.
+- A frightening call may say: “Grandma, I have had an accident. Please do not tell Mum. Send money now.” It may sound exactly like a loved one.
 - The United States Federal Trade Commission warns that a short clip posted online can be enough for a criminal to attempt a voice clone. Its advice is simple: do not trust the voice alone. [Read the FTC warning](https://consumer.ftc.gov/comment/180311).
 - Hang up. Call your relative using a number you already know, or contact another trusted family member. Do not use the number supplied by the caller.
 - Agree on a family **safe word** or a simple question only your family can answer. It should not be a fact easily found on social media.
-- Never let urgency make the decision for you. "Act now", "keep this secret" and "pay by gift card, cryptocurrency or instant transfer" are danger signs.
+- Never let urgency make the decision for you. “Act now”, “keep this secret” and “pay by gift card, cryptocurrency or instant transfer” are danger signs.
 - A real organisation will let you verify independently. A scammer tries to keep you in their message, call or link.
 
 ### Scam signs worth memorising
@@ -185,28 +177,28 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
 - A request for a code that was sent to your phone. That code is often the key to your account.
 - When in doubt, stop and talk to someone. A second pair of eyes is a powerful security tool.
 
-## Practical device safety, without the jargon
+## 8. Practical device safety, without the jargon
 
 - Use a different, long password for each important account. A password manager can remember them for you.
 - Turn on two-factor authentication where available. It means a password alone is not enough to enter your account.
 - Keep your phone, tablet, browser and apps updated. Updates often fix security problems, not just add features.
-- Download AI apps only from the official Apple App Store, Google Play store or the provider's real website. Check the developer name and reviews, but do not rely on reviews alone.
+- Download AI apps only from the official Apple App Store, Google Play store or the provider’s real website. Check the developer name and reviews, but do not rely on reviews alone.
 - Read the privacy settings before using a new service. Look for options about chat history, training and data controls, then choose what you are comfortable with.
 - Log out of important accounts on a shared computer. Lock your own device with a PIN, passcode or biometric lock.
-- Be careful with browser extensions that promise "free AI". An extension may be able to read what you see or type in the browser.
-- Australia's cyber security guidance emphasises that security supports the safety, privacy and reliability of AI systems. [Cyber.gov.au's AI security guidance](https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/guidelines-for-secure-ai-system-development) is a useful reminder that convenience and safety should travel together.
+- Be careful with browser extensions that promise “free AI”. An extension may be able to read what you see or type in the browser.
+- Australia’s cyber security guidance emphasises that security supports the safety, privacy and reliability of AI systems. [Cyber.gov.au’s AI security guidance](https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/guidelines-for-secure-ai-system-development) is a useful reminder that convenience and safety should travel together.
 
-## Keep your human skills in the picture
+## 9. Keep your human skills in the picture
 
 - AI is strong at speed, first drafts and finding patterns in a large amount of text.
 - People are strong at values, relationships, context, compassion and deciding what is worth doing.
-- Ask yourself: "What would a sensible friend ask before believing this?"
+- Ask yourself: “What would a sensible friend ask before believing this?”
 - Use AI to create options, not to choose your values.
-- Do not be embarrassed to ask the same question in a simpler way. "Explain that without jargon" is an excellent instruction.
+- Do not be embarrassed to ask the same question in a simpler way. “Explain that without jargon” is an excellent instruction.
 - Do not be embarrassed to walk away. You do not owe a chatbot, an advert or a caller an immediate reply.
 - **Aha moment:** the most valuable skill in the age of AI may be the old-fashioned one: knowing when to pause and ask a good question.
 
-## Pictures, videos and "too good to be true" evidence
+## 10. Pictures, videos and “too good to be true” evidence
 
 - A photograph used to feel like strong evidence. Now it may be real, edited, generated or taken from somewhere else and given a false caption.
 - Do not try to become a detective by staring at every eyelash or shadow. Image quality is not a dependable test on its own.
@@ -216,18 +208,18 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
   - Do reputable news outlets or official organisations report the same event?
   - Does the account have a long, credible history or was it created recently?
   - Is the picture being used to make you angry, frightened or eager to invest before you can think?
-- A video of a politician, celebrity or doctor may be a deepfake: a convincing artificial imitation. Treat an extraordinary claim as unproven until it appears through that person's official channels or reliable reporting.
-- **Aha moment:** "I can see it with my own eyes" is no longer the end of the enquiry. It is the beginning of it.
+- A video of a politician, celebrity or doctor may be a deepfake: a convincing artificial imitation. Treat an extraordinary claim as unproven until it appears through that person’s official channels or reliable reporting.
+- **Aha moment:** “I can see it with my own eyes” is no longer the end of the enquiry. It is the beginning of it.
 - AI-generated pictures can still be delightful. Use them for an invitation, a story illustration or an idea for a garden. Just label them honestly if another person might mistake them for a real event.
 
 ### Example: the celebrity investment advertisement
 
 - You see a video of a famous television presenter recommending a new investment opportunity.
 - The video looks polished. The caption says places are limited. A link asks for your phone number.
-- Do not use the link. Search for the presenter's verified account and their official website. Search the investment name plus the word "scam".
+- Do not use the link. Search for the presenter’s verified account and their official website. Search the investment name plus the word “scam”.
 - Discuss any investment with a licensed financial professional you have contacted independently. A familiar face in a video is marketing, not proof.
 
-## How to use AI alongside people, not instead of them
+## 11. How to use AI alongside people, not instead of them
 
 - Use a chatbot before an appointment to organise your thoughts. Take a printed list of questions to the real person.
 - Use it after an appointment to turn **your own non-sensitive notes** into plain-language reminders. Do not treat the result as a clinical record.
@@ -238,48 +230,48 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
 
 ### Helpful phrases for asking a real person
 
-- "An AI tool told me this. Could you help me check whether it applies to my situation?"
-- "I do not understand this term. Could you explain it without jargon?"
-- "Before I click or pay, what is the official way to verify this?"
-- "What information should I never enter into this service?"
+- “An AI tool told me this. Could you help me check whether it applies to my situation?”
+- “I do not understand this term. Could you explain it without jargon?”
+- “Before I click or pay, what is the official way to verify this?”
+- “What information should I never enter into this service?”
 - These questions are not silly. They are exactly the questions careful people ask.
 
-## Common mistakes and easy replacements
+## 12. Common mistakes and easy replacements
 
-- **Mistake:** asking, "Can I trust AI?"
-  - **Better question:** "Can I trust this particular answer for this particular decision after checking it?"
+- **Mistake:** asking, “Can I trust AI?”
+  - **Better question:** “Can I trust this particular answer for this particular decision after checking it?”
 - **Mistake:** pasting a whole letter, report or email to get a summary.
   - **Better approach:** remove names and numbers, summarise only the general parts or ask the sender for a plain-language explanation.
-- **Mistake:** treating a chatbot's friendly tone as a relationship.
+- **Mistake:** treating a chatbot’s friendly tone as a relationship.
   - **Better approach:** enjoy the conversation if you wish, but seek human support for loneliness, grief, danger or a major personal choice.
 - **Mistake:** using the first answer as the final answer.
   - **Better approach:** ask it to show assumptions, give alternatives and state what it cannot know.
 - **Mistake:** clicking the first link in an AI answer.
-  - **Better approach:** type the organisation's address yourself or use a bookmark you already trust.
+  - **Better approach:** type the organisation’s address yourself or use a bookmark you already trust.
 - **Mistake:** feeling embarrassed after nearly falling for a scam.
   - **Better approach:** tell someone promptly. Scams are designed to rush and manipulate capable people. Fast reporting can protect you and others.
 
-## A short group activity for a talk or community class
+## 13. A short group activity for a talk or community class
 
-- Read this request aloud: "Write a warm invitation to a neighbourhood afternoon tea."
+- Read this request aloud: “Write a warm invitation to a neighbourhood afternoon tea.”
 - Ask the group what could safely be included: the public venue, date, time and a request to RSVP.
-- Ask what should not be included: anyone's private phone number, medical information or a list of people who live alone.
+- Ask what should not be included: anyone’s private phone number, medical information or a list of people who live alone.
 - Generate a draft, then improve it together: make it friendlier, shorter and clearer.
-- Next, read this request: "My bank has texted a link. Is it real?"
+- Next, read this request: “My bank has texted a link. Is it real?”
 - Ask the group what the AI can do safely: list scam warning signs and help write a script for calling the bank.
 - Ask what it must not do: decide the text is genuine, open the link, access the bank account or tell someone to share a code.
-- Finish with the sentence everyone can remember: **"I verify through the official channel I find myself."**
+- Finish with the sentence everyone can remember: **“I verify through the official channel I find myself.”**
 
-## A gentle 10-minute practice session
+## 14. A gentle 10-minute practice session
 
-- Choose a low-risk task. For example: "Help me make a shopping list for three easy vegetarian dinners."
-- Read the answer and improve the request: "Make it suitable for one person. Avoid nuts. Keep the ingredients inexpensive."
+- Choose a low-risk task. For example: “Help me make a shopping list for three easy vegetarian dinners.”
+- Read the answer and improve the request: “Make it suitable for one person. Avoid nuts. Keep the ingredients inexpensive.”
 - Notice what happened: the result improved because **you** supplied judgement and context.
-- Ask it for a fact: "What is the opening time of my nearest library?"
-- Now practise checking: find the library's official website or call it. Notice that the chatbot's answer is only a starting point.
-- Finish by writing one rule on paper: "I will not enter passwords, codes, bank details or private documents into a chatbot." Put it near your device.
+- Ask it for a fact: “What is the opening time of my nearest library?”
+- Now practise checking: find the library’s official website or call it. Notice that the chatbot’s answer is only a starting point.
+- Finish by writing one rule on paper: “I will not enter passwords, codes, bank details or private documents into a chatbot.” Put it near your device.
 
-## A pocket checklist for every AI interaction
+## 15. A pocket checklist for every AI interaction
 
 - What am I trying to achieve?
 - Is this a low-stakes task or a decision that could affect health, money, safety or rights?
@@ -287,7 +279,46 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
 - Does the answer ask me to hurry, pay or keep a secret?
 - Can I verify the important claim through an official, independent source?
 - Would I be comfortable explaining this decision to a trusted friend?
-- If the answer is "no" or "I am not sure", pause and get human help.
+- If the answer is “no” or “I am not sure”, pause and get human help.
+
+
+**Popular AI subscriptions compared, including free plans (prices in US dollars per month, checked October 2026)**
+
+| Provider | Plan | Price (USD/month) | Models you can use | Usage allowance | Common use cases | Link |
+|---|---|---|---|---|---|---|
+| Anthropic (Claude) | Free | $0 | Sonnet, Haiku | Everyday limits that reset every 5 hours. No Claude Code or Research mode | Trying Claude out, everyday questions, drafting and summarising, simple documents and slides | [claude.com/pricing](https://claude.com/pricing) |
+| Anthropic (Claude) | Pro | $20 ($17/month if you pay $200 up front for the year) | Opus, Sonnet, Haiku. Fable only through pay-as-you-go usage credits | At least 5x Free per rolling 5-hour session, plus weekly limits. Context window up to 1M tokens, depending on the model | Daily writing and editing, research, analysing long documents, coding help, building documents and slides | [claude.com/pricing](https://claude.com/pricing) |
+| Anthropic (Claude) | Max 5x | $100 | Everything in Pro, with Fable included (up to 50% of your weekly limit) | 5x Pro per 5-hour session. Includes $100/month of API credits | Heavy daily use, long coding sessions, people who keep hitting Pro limits | [claude.com/pricing](https://claude.com/pricing) |
+| Anthropic (Claude) | Max 20x | $200 | Same as Max 5x | 20x Pro per 5-hour session. Includes $200/month of API credits | Using Claude as an all-day work tool, very large projects | [claude.com/pricing](https://claude.com/pricing) |
+| OpenAI (ChatGPT) | Free | $0 | GPT-6 Luna | Unlimited text chats (subject to fair-use rules). Limited uploads, images, voice, deep research and memory. May show ads | Casual questions, brainstorming, simple writing help, the odd image | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| OpenAI (ChatGPT) | Go | $8 | GPT-6 Luna | More messages, uploads, images and voice than Free. May show ads | Light daily use where Free feels too limited | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| OpenAI (ChatGPT) | Plus | $20 | GPT-6.1 Sol, GPT-6 Astra, GPT-6 Sol, GPT-6 Luna | Expanded messages, uploads, deep research and Codex. Reasoning context window 256K tokens | Daily work and study, writing, research, image creation, scheduled tasks, light coding | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| OpenAI (ChatGPT) | Pro 100 | $100 | Same models as Plus, with Pro-level reasoning (GPT-6 Astra) | Reported at about 5x Plus. Reasoning context window 400K tokens | Heavy research and coding, people who hit Plus limits most days | [chatgpt.com/pricing](https://chatgpt.com/pricing) |
+| OpenAI (ChatGPT) | Pro 200 | $200 | Same as Pro 100 | More usage than Pro 100. New subscribers get a lower allowance than before | All-day research, coding agents and deep research | [help.openai.com](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers) |
+| OpenAI (ChatGPT) | Pro 500 | $500 | Same as Pro 100, plus "Ultrafast" mode | Highest usage of the three Pro plans. Only plan with Ultrafast | Professionals who need the most capacity and the fastest responses | [help.openai.com](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers) |
+| Google (Gemini) | Free | $0 | Gemini 3.5 Flash-Lite | Everyday limits. Includes image generation, Deep Research, Gemini Live voice chat, Canvas and 15 GB storage | Quick answers, voice chat, summarising and brainstorming for anyone with a Google account | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Google (Gemini) | AI Plus | $4.99 | Gemini 3.6 Flash, Gemini 3.1 Pro | 2x Free usage, 400 GB storage | A low-cost step up, with video generation and Gemini inside Gmail | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Google (Gemini) | AI Pro | $19.99 | Gemini 3.8 Flash, Gemini 3.1 Pro | 4x Free usage. 1M-token context window, 5 TB storage | Gmail, Docs and Drive users, long documents, research, creative video and images | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Google (Gemini) | AI Ultra (lower tier) | $99.99 | Same as AI Pro, plus early access to Deep Think | 5x AI Pro usage, 20 TB storage | Heavy creative work, advanced reasoning, AI agents | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Google (Gemini) | AI Ultra (top tier) | $199.99 | Same as the lower Ultra tier | 20x AI Pro usage | Power users and creators who run out of capacity on every other plan | [gemini.google/subscriptions](https://gemini.google/subscriptions/) |
+| Microsoft (Copilot) | Free | $0 | Copilot (Microsoft does not list model names) | Usage limits apply. Works in the browser and Windows, but not built into Word, Excel or PowerPoint | Quick questions while browsing or using Windows, simple image and text requests | [copilot.microsoft.com](https://copilot.microsoft.com/) |
+| Microsoft (Copilot) | Microsoft 365 Personal | $9.99 | Copilot | Standard Copilot usage. Voice mode up to 30 minutes a day | People who already use Word, Excel and Outlook and want some AI help inside them | [microsoft.com](https://www.microsoft.com/en-au/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf) |
+| Microsoft (Copilot) | Microsoft 365 Premium | $19.99 ($199.99 per year) | Copilot inside Word, Excel, PowerPoint and Outlook | Highest Copilot usage of the consumer plans. Voice mode up to 60 minutes a day | Heavy Office users, home-business paperwork and spreadsheets, families who share a plan | [microsoft.com](https://www.microsoft.com/en-au/microsoft-365/p/microsoft-365-premium/cfq7ttc11z3q) |
+| Perplexity | Free | $0 | Basic search models | A small number of advanced "Pro" searches a day. No model choice or Deep Research | Quick, source-linked answers instead of a regular web search | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
+| Perplexity | Pro | $20 ($200 per year) | A choice of models from several AI companies | Higher research limits and file uploads. Weekly allowance for its "Computer" agent | Research with citations, fact-checking, comparing products, reading several documents at once | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
+| Perplexity | Max | $200 ($2,000 per year) | Pro models plus the newest frontier models | 10,000 "Computer" agent credits a month and the highest limits | Professional researchers and people who run many agent tasks | [perplexity.ai](https://www.perplexity.ai/hub/pricing) |
+| xAI (Grok) | Free | $0 | Grok (the model varies) | Limited access on grok.com and inside X | Casual chat, questions about what is happening on X | [grok.com/plans](https://grok.com/plans) |
+| xAI (Grok) | SuperGrok Lite | $10 | Grok 4 family | Entry-level limits | Regular chat and image generation on a budget | [grok.com/plans](https://grok.com/plans) |
+| xAI (Grok) | SuperGrok | $30 | Newest Grok models (Grok 4.3 rolling out) | Reported at roughly 100 prompts every 2 hours | Daily chat, live information from X, images and voice | [grok.com/plans](https://grok.com/plans) |
+| xAI (Grok) | SuperGrok Heavy | $300 | Everything in SuperGrok, plus Grok 4 Heavy (multiple AI agents working together) | Highest limits. Sometimes discounted for the first three months | The hardest reasoning and research problems | [grok.com/plans](https://grok.com/plans) |
+
+- **Start free:** every provider above has a free plan, and for most people it is enough to find out which assistant you like. Pay only when you keep hitting the limits.
+- **No token counts:** none of these consumer plans publishes a fixed number of tokens. Instead they give you a *usage allowance* that resets every few hours (and sometimes weekly). Long chats, uploaded files and "thinking" modes use that allowance faster. The multiples ("5x Pro", "20x Pro") are the fairest way to compare plans from the same provider.
+- **Context window vs. allowance:** the context window (for example 1M tokens) is how much the AI can read in a single conversation. It is not the same as how much you can use per month.
+- **Pay per token instead:** if you want an exact token count, the companies' developer services (the "API") charge per million tokens. That is a separate product from these subscriptions.
+- **Australian prices differ:** the table uses US dollar prices from each company's US page, before tax. Google's Australian page, for example, lists AI Plus at A$7.99, AI Pro at A$32.99 and AI Ultra from A$149.99. Check the link for your own country, and note that app-store purchases can cost more.
+- **Prices change often:** plans, model names and limits were reshuffled several times in 2026. Treat this table as a snapshot and confirm on the provider's page before you pay.
+
 
 ## Closing thought
 
@@ -295,3 +326,4 @@ If you ask me what is missing in AI, it is consciousness. Personally, I see emot
 - A calculator does not decide whether you can afford a holiday. A map does not decide whether it is safe to travel. AI does not decide what is true, wise or right for you.
 - Use it for ideas, drafts and explanations. Protect your private information. Check important facts. Slow down when money, health or urgency enters the conversation.
 - Curiosity plus caution is not fear of technology. It is confidence with technology.
+
