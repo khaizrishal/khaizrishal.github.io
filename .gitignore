@@ -1,0 +1,13 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# Local git config helper
+.gitconfig-aeo-app
