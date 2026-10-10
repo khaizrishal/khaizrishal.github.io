@@ -14,6 +14,29 @@ h6,
     font-weight: 400;
 }
 
+.blog-content,
+.blog-content b,
+.blog-content strong,
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.blog-content b,
+.blog-content strong,
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+    font-weight: 700;
+}
+
 .qr-code {
     border-radius: 12px;
 }
