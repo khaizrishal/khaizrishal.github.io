@@ -3,16 +3,8 @@ date = '2026-09-17T11:15:30+10:00'
 draft = false
 title = 'AI Without the Mystery'
 tags = ['Artificial Intelligence', 'Digital Safety', 'Privacy', 'Soft Skills']
-summary = "A practical, safe and surprising introduction to using AI wisely."
+summary = "A practical introduction to using AI wisely."
 +++
-
-AI can be helpful, surprising and sometimes very dangerous to use. You do not need to be a technology expert to use it wisely: here we discuss ways to Control AI using just curiosity and common sense.
-
-- **Understand** - what AI can do and where it falls short.
-- **AI's hallucinate** - how to identify and differentiate hallucination from useful info.
-- **Protect your privacy** - knowing what info keep out of a chatbot.
-- **Spot scams and fakes** - tips to spot AI scams that can look convincing.
-- **Check before you act** - when health, money or safety is at stake.
 
 ## Introduction:
 
@@ -22,17 +14,17 @@ AI can be helpful, surprising and sometimes very dangerous to use. You do not ne
   - generating language
   - making predictions
   - decisions based on reasoning
-
-## Tokens
 - Broadly speaking, AI falls into two main categories:
   - **Generative AI**: Generats new content such as text, images, music or code from a prompt. e.g. Chatbots, Image generation.
   - **Predictive AI**: Analyses patterns in data to estimate what is likely to happen next. Spam filters, Recommendation systems and House price Forecasting.
 - What most of us call AI in everyday life refers to **Generative AI**: systems like ChatGPT, Claude or Gemini that can produce words, pictures, sound or computer code from a prompt. 
-- Only thing necessary to know is that AI is more than just the chatbots we use on a day to day basis.
+- It's not important to understand categories of AI in detail - Only thing necessary to know is that AI is more than just ChatGPT, Claude, Gemini etc. though that may be what we most use on a day to day basis.
 - To understand how this kind of AI works
   - In its simplest form - Think of it like your mobile-phone keyboard autocomplete. It would **recommend** the next set of most **probable** set of **alphabets or words** most **suited** to **complete the sentence** - one small piece of a word at a time.
-- These pieces are called **tokens**. 
-- Many AI providers charge you by how many tokens a prompt and reply use. You can approximate it as 4 token for every 3 english words. E.g. 1,000-word message might use roughly 1,300 to 1,500 tokens. Some plans include a monthly token allowance, while others charge extra once you pass the limit. 
+- These pieces of words are called **tokens**. 
+
+## Tokens
+- Many AI providers charge you by how many tokens a prompt and reply use. Different Model providers have different tokenization algorithms but You can approximate it as 4 token for every 3 english words. E.g. 1,000-word message might use roughly 1,300 to 1,500 tokens. Some plans include a monthly token allowance, while others charge extra once you pass the limit. 
 - The point is simple: long prompts, long answers and many generations can use up a monthly allocation quickly.
 - https://platform.openai.com/tokenizer
 
@@ -43,19 +35,19 @@ AI can be helpful, surprising and sometimes very dangerous to use. You do not ne
 An AI assistant is not created in one step. A useful way to picture its life is: prepare examples, train a model to find patterns, tune how it responds, then run it each time someone asks a question.
 
 #### 1. Gather and prepare data
-- Developers collect or create examples suited to the task, such as text for a language model or labelled pictures for an image classifier. They filter and organise this material so it can be processed by computers.
+- The responsible people collect data or create examples suited to the task, such as text or labelled pictures for an image classifier. They filter and organise this material so it can be processed by computers.
 - The data shapes what a model can learn. It may contain gaps, old information, mistakes or unfair patterns, so more data does not automatically mean better answers.
 
-### 2. Train the model
-- During **training**, computers adjust a model’s internal numbers so it gets better at a task. A language model, for example, practises predicting missing or next pieces of text across a very large number of examples.
-- This takes specialised chips working together in data centres. The electricity depends on the model, the chips, how long they run and how efficiently the data centre operates.
-- **A striking estimate:** researchers estimated that one training run for OpenAI’s GPT-3 used about **1,287 megawatt-hours (MWh)** of electricity. The US Energy Information Administration says the average US residential customer bought 10,791 kilowatt-hours a year in 2022. Dividing those figures gives about **119 homes’ annual electricity** for that GPT-3 training run. This is an estimate for one model and one training run, not a universal number for every AI system. 
-- References
+#### 2. Train the model
+- During **training**, the algorithm adjust a model’s internal numbers so it learns to produce similar results to the data it is trained on. A model, for example, practises predicting missing or next pieces of text across a very large number of examples.
+- But it takes a lot of computation power and specialised chips working together in data centres.
+- To get a feel of it currently we are on GPT 6 model but training of one of the earlier OpenAI’s GPT-3 used about **1,287 megawatt-hours (MWh)** of electricity or enough to power **119 homes in US for an entire year**. - References
   - [Research estimate for GPT-3](https://arxiv.org/abs/2104.10350)
   - [US household electricity figures](https://www.eia.gov/tools/faqs/faq.php?id=97&t=4)
 
 ### 3. Tune its behaviour
-- A trained model may then be **fine-tuned** with more focused examples, such as question-and-answer pairs. For an assistant, developers can also use human feedback and other techniques to make responses more useful and safer.
+- A trained model may then be **fine-tuned** with more focused examples based on the usecase it is going to be used for - such as question-and-answer pairs. 
+- This is done with model learning based on human feedback on the output.
 - This stage shapes how the model responds. It does not guarantee that every answer is correct, fair or safe.
 
 ### 4. Test before release
@@ -64,8 +56,6 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 
 ### 5. Run it: inference
 - **Inference** is the name for using a trained model. When you send a prompt, the model processes it and generates an answer. For a chatbot, it predicts a response in small pieces called tokens.
-- Each request uses computing resources and electricity. A model used millions of times keeps drawing power after its original training is finished, so the energy for everyday use adds up across all those requests.
-- The electricity for one answer varies with the model, the length of the prompt and reply, the hardware and the data centre. There is no single reliable figure that applies to every chatbot question.
 
 ### 6. Monitor and improve
 - After release, providers monitor performance, fix problems and may update the software, its instructions or the model itself. A major new model can require another training process.
@@ -96,7 +86,6 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - The United States National Institute of Standards and Technology notes that generative systems can confidently generate false material and even false citations. [NIST’s Generative AI Profile](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388) explains why this is a known risk.
 - Do not argue with it as though it is hiding the truth. Ask for sources, then check the sources yourself.
 
-
 ## How can you ask a right prompt
 
 ### Five questions that make AI answers better
@@ -110,6 +99,14 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 ### A prompt you can copy
 
 > Explain **[topic]** in plain language for a beginner. Give me three key points, one everyday example and three questions I can use to check the information with an official source. If a fact may have changed recently, say that clearly.
+
+### Let the AI interview you
+
+> I need to plan a trip. Ask me a series of relevant questions to get me a recommendation.
+
+- This puts the AI in the role of an interviewer. It gathers the details that matter before it answers.
+- Add a limit so it does not run away: “Ask me up to five questions, one at a time, and wait for my answers before you reply.”
+- This works well whenever you are not sure which facts matter, such as planning a trip, choosing a product or preparing for an appointment.
 
 ### Improve a weak prompt
 
@@ -144,18 +141,22 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 - Then put your real details into your own private document, not the chatbot.
 
 
+## Ways of saving money.
 
-## Do I have to pay to use AI?
- - What you call as AI and it's application an extension of this ability that lets it do anything from:
-  - Answer questions in ChatGPT, draft emails, translate language and assist with complex tasks.
-  - It can take decision based and make machinery respond based on sensor information.
-  - Even take complex areas like medicines and weaponary very comparable to what a human can do sometimes even better and faster.
-- if you see carefully the AI Chatbots (in whats called a streaming mode) you can see it generating a part of a word at a time, its called a token. For simplicity of calculation for 1 token is about 75% of an word in English.
-- Its like a music mixing console where you have faders, knobs, swtiches buttons similarly you have parameters here to name a few - parameters increase temperature AI become extrememly imaginative put the temperature to 0 it produces a better more consistent output - based on this you can use AI for creative writing or for drafting a legal document.
-- Similarly you can do a role play with it - this is another way to influence how the AI responds to you.
-- Finally in the world before Chatgpt we used to have software code to do lots of things like making calls, converting audio to text etc... you may give AI access to these capabilities - as tools AI will be able to use it based on situation.
-- If you ask me whats missing in AI is the concisousness. personally i see emotions, principles, culture etc associated with words, sentences and semantics, information which is missing in the training data. This is another dimension to the language which AI isn't aware of. e.g you could use abusive language on AI and it would always respond is a composed way - while this is the best way to respond, human often has various degrees of patience, culture and other things drive how a person responds to such situations.
-- this is good and bad because as human there is an element of humanity which we can't be 100% sure if it is built into the AI model or not.
+- Use the free version first. Free chatbots are good enough for everyday questions, and you only need to pay when you have a specific job the free tier cannot do, such as very long documents, heavy image work or a tool you use every day.
+- Know how you are billed. A monthly subscription costs the same however much you type, but usage-based apps and developer tools charge by the word, so a long conversation is a bigger bill.
+- Drop the padding. Words like “please” and “thank you” do not make the answer better, and on usage-based tools every extra word is a cost.
+- Ask for short answers. “Answer in three bullet points” or “keep it under 100 words” costs less and is easier to read.
+- Remember that output costs more than input. Most paid services charge more for what the AI writes than for what you send, so a request that invites a huge answer is the expensive part.
+- Start a fresh chat for a new topic. A long, rambling thread is re-sent with every message, which uses up your allowance and can confuse the model.
+- Paste only what is needed. Send the paragraph you want answered, not the whole document, unless the task really is the whole document.
+- Use the smallest model that can do the job. A quick rewrite or a simple list does not need the most powerful and most expensive model.
+- Ask for the change, not the whole thing. “Show me just the corrected paragraph” is cheaper than regenerating the entire document.
+- Turn off extras you are not using, such as web search or image tools, if your plan charges for them.
+- Take a free trial only when you need a short burst of heavy use, and cancel before it renews. Students, teachers and some community groups can get the same tools at a lower price.
+- Watch tools that charge by credits or by the minute. Image, video and audio generation often cost more per use, so set the size, length and number you need instead of asking for many versions.
+- Keep an eye on your usage. Set a spending limit on any account that bills per use, and check the usage page each month. Cancel subscriptions you have stopped using.
+
 ## 3. The traffic-light rule: where AI fits
 
 ### Green light: useful, low-stakes jobs
