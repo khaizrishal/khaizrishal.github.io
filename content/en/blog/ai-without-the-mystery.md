@@ -32,6 +32,29 @@ summary = "A practical introduction to using AI wisely."
 
 ## The stages of an AI model: from learning to answering
 
+<pre class="mermaid">
+flowchart LR
+    A(📚 Prepare data) --> B(🧠 Train model) --> C(🎯 Fine-tune) --> D(🚀 Deploy) --> E(💬 Inference: answer)
+
+    classDef stage1 fill:#dff3ff,stroke:#39a9db,color:#163b50,stroke-width:2px
+    classDef stage2 fill:#e8e1ff,stroke:#8064d8,color:#30245a,stroke-width:2px
+    classDef stage3 fill:#ffe5ef,stroke:#e66b99,color:#54253a,stroke-width:2px
+    classDef stage4 fill:#fff0cf,stroke:#e2a72e,color:#513c12,stroke-width:2px
+    classDef stage5 fill:#dff5e8,stroke:#48a66b,color:#19462b,stroke-width:2px
+
+    class A stage1
+    class B stage2
+    class C stage3
+    class D stage4
+    class E stage5
+</pre>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.0/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false, theme: 'base', flowchart: { curve: 'basis', htmlLabels: true } });
+  await mermaid.run({ querySelector: '.mermaid' });
+</script>
+
 An AI assistant is not created in one step. A useful way to picture its life is: prepare examples, train a model to find patterns, tune how it responds, then run it each time someone asks a question.
 
 #### 1. Gather and prepare data
