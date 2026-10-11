@@ -42,14 +42,17 @@ AI can be helpful, surprising and sometimes very dangerous to use. You do not ne
 
 An AI assistant is not created in one step. A useful way to picture its life is: prepare examples, train a model to find patterns, tune how it responds, then run it each time someone asks a question.
 
-### 1. Gather and prepare data
+#### 1. Gather and prepare data
 - Developers collect or create examples suited to the task, such as text for a language model or labelled pictures for an image classifier. They filter and organise this material so it can be processed by computers.
 - The data shapes what a model can learn. It may contain gaps, old information, mistakes or unfair patterns, so more data does not automatically mean better answers.
 
 ### 2. Train the model
 - During **training**, computers adjust a model’s internal numbers so it gets better at a task. A language model, for example, practises predicting missing or next pieces of text across a very large number of examples.
 - This takes specialised chips working together in data centres. The electricity depends on the model, the chips, how long they run and how efficiently the data centre operates.
-- **A striking estimate:** researchers estimated that one training run for OpenAI’s GPT-3 used about **1,287 megawatt-hours (MWh)** of electricity. The US Energy Information Administration says the average US residential customer bought 10,791 kilowatt-hours a year in 2022. Dividing those figures gives about **119 homes’ annual electricity** for that GPT-3 training run. This is an estimate for one model and one training run, not a universal number for every AI system. [Research estimate for GPT-3](https://arxiv.org/abs/2104.10350) · [US household electricity figures](https://www.eia.gov/tools/faqs/faq.php?id=97&t=4)
+- **A striking estimate:** researchers estimated that one training run for OpenAI’s GPT-3 used about **1,287 megawatt-hours (MWh)** of electricity. The US Energy Information Administration says the average US residential customer bought 10,791 kilowatt-hours a year in 2022. Dividing those figures gives about **119 homes’ annual electricity** for that GPT-3 training run. This is an estimate for one model and one training run, not a universal number for every AI system. 
+- References
+  - [Research estimate for GPT-3](https://arxiv.org/abs/2104.10350)
+  - [US household electricity figures](https://www.eia.gov/tools/faqs/faq.php?id=97&t=4)
 
 ### 3. Tune its behaviour
 - A trained model may then be **fine-tuned** with more focused examples, such as question-and-answer pairs. For an assistant, developers can also use human feedback and other techniques to make responses more useful and safer.
@@ -112,16 +115,19 @@ An AI assistant is not created in one step. A useful way to picture its life is:
 
 - Weak: “Help me make a shopping list.”
 - Better: “Help me make a shopping list for three easy vegetarian dinners for one person, avoid nuts and keep the ingredients inexpensive.”
-- The answer improved because you supplied the audience, limits and context.
-
-- **Aha moment:** a good prompt is not a test of cleverness. It is simply good communication: tell the assistant the audience, purpose and boundaries.
+- Identifying the good parts of the prompt: you supplied the **audience**, **limits** and **context**. Note if you do not provide the full context it will fill it with the information it was trained on. so Summary set your -audience, purpose and boundaries.
 
 ## What information can you share and not share in your prompts
 
 - Before pasting anything into an AI service, imagine it printed on a postcard. Would you be comfortable if a stranger read it?
-- Share **general and made-up details** wherever they will do the job.
-  - Instead of: “My neighbour Margaret Jones at 14 Rose Street has dementia. Write a message to her son.”
-  - Try: “Write a kind message to a family member about helping an older neighbour who has memory difficulties.”
+
+<figure>
+  <img src="/img/lorentz-postcard-1911.jpg" alt="A handwritten 1911 postcard by the physicist Hendrik Lorentz" width="460">
+  <figcaption>Physicist Hendrik Lorentz wrote this postcard in February 1911 to J.F. Hulk, a curator at the Teylers Museum in Haarlem, to arrange a planned visit by Albert Einstein and his wife. Public domain image, via Wikimedia Commons.</figcaption>
+</figure>
+
+- Share **general and made-up details** wherever they will do the job. For example: “Write a kind message to a family member about helping an older neighbour who has memory difficulties.”
+  - This asks for the same helpful wording without naming a real person or sharing private health details.
 - Remove names, addresses, dates of birth, account numbers, customer numbers and licence or passport details.
 - Never enter passwords, one-time codes, PINs, security-question answers or recovery codes. A genuine bank or government agency will not need these in a chatbot.
 - Do not upload a photograph of a passport, Medicare card, bank statement, tax document, medical report or legal document to a public AI tool.
